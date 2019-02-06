@@ -1,0 +1,7 @@
+[package]
+name = "civil"
+version = "0.0.1"
+authors = ["Sam Kreimeyer"]
+edition = "2018"
+
+[dependencies]
