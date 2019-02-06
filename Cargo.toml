@@ -1,5 +1,6 @@
 [package]
 name = "civil"
+description="a library to support civil engineering applications"
 version = "0.0.1"
 authors = ["Sam Kreimeyer"]
 edition = "2018"
