@@ -52,7 +52,7 @@
 //!
 //! > What if I don't know anything about civil engineering?
 //!
-//! There are some [excellent texts]https://!www.amazon.com/Civil-Engineering-Formulas-Tyler-Hicks/dp/0071614699 that thoroughly list most of the functions appropriate for this library. You don't necessarily need to fully understand their context and usage as long as you can translate an equation into rust with sensible inputs and outputs.
+//! There are some [excellent texts](https://!www.amazon.com/Civil-Engineering-Formulas-Tyler-Hicks/dp/0071614699) that thoroughly list most of the functions appropriate for this library. You don't necessarily need to fully understand their context and usage as long as you can translate an equation into rust with sensible inputs and outputs.
 //!
 //! The Do's:
 //! 1. The file hierarchy should be clear and have intuitive organization based on logical groupings of tasks.
