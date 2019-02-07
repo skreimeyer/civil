@@ -67,12 +67,12 @@
 //! 1. Do not introduce dependencies that are not actually necessary. Using the new hotness in async should be left up to the end user. Very few of these functions actually require anything more sophisticated than High School algebra and geometry.
 //! 2. Do not create interdependencies between top-level modules. Your geotech functions shouldn't break your hydrology functions.
 
-pub mod bridge
-pub mod economics
-pub mod geotech
-pub mod materials
-pub mod sanitation
-pub mod structural
-pub mod transportation
-pub mod units
-pub mod water
+pub mod bridge;
+pub mod economics;
+pub mod geotech;
+pub mod materials;
+pub mod sanitation;
+pub mod structural;
+pub mod transportation;
+pub mod units;
+pub mod water;
