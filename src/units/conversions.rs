@@ -1,13 +1,14 @@
+/*!
 //! This contains conversion factors for commonly used units. Instead of
 //! having a *very* large number of functions for each conversion, there is
 //! just one big hashmap. The entries for all items into the hashmap all have
 //! the same format:
 //!
-//!```
+//! ```
 //! ((&str,&str),f32)
 //! (("from units","to units"),1.0)
 //! (("meter","foot"),3.2)
-//!```
+//! ```
 //!
 //! That is, the key in the hashmap is a tuple of string slices in the order
 //! of units you are converting from to the unit you are converting to. Units
@@ -17,6 +18,7 @@
 //! English, such as "pound per square inch". For the sake of brevity, only
 //! very common metric units with prefixes will be included, such as kilogram
 //! and kilometer.
+*/
 
 use std::collections::HashMap;
 
