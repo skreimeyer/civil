@@ -1,0 +1,1124 @@
+abampere,10,ampere (A)
+abcoulomb,10,coulomb (C)
+abfarad,1000000000,farad (F)
+abhenry,1E-09,henry (H)
+abmho,1000000000,siemens (S)
+abohm,1E-09,ohm ()
+abvolt,1E-08,volt (V)
+"acceleration, standard",9.80665,m per sec squared
+"acceleration, standard",32,ft./ sec / sec (ft/s²)
+acre,10,sq. chain (Gunter's)
+acre,160,sq. rods
+acre,100000,sq. links (Gunter's)
+acre,0.4047,hectare
+acres,43560,sq. feet
+acres,4046.873,sq. metres
+acres,0.001562,sq. miles
+acres,4840,sq. yards
+acre-feet,43560,cu. feet
+acre-feet,325900,gallons
+acre-feet,1233.489,cubic metre (m³)
+american wire gauge [awg],see table,standard [swg]
+ampere-hours,3600,coulombs (C)
+ampere-hours,0.03731,faradays
+ampere-turns,1.257,gilberts
+amps (watts = amps x volts),amp x volt,watts (see details)
+angstrom unit,3.94E-06,inch
+angstrom unit,1E-10,metre
+angstrom unit,0.0001,micron
+are,100,square metre
+astromical unit,1.495 979E+08,kilometres
+atmospheres,0.007348,ton/sq. inch
+atmospheres,76,cm of mercury
+atmospheres,33.9,ft. of water(at 4°C)
+atmospheres,406.8,in. of water(at 4°C)
+atmospheres,29.92,in. of mercury (0°C)
+atmospheres,101.325,kilo Pascal
+atmospheres,1.0333,kgs/sq. cm
+atmospheres,10332,kgs/sq. metre
+atmospheres,14.7,pounds/sq. in
+atmospheres,1.058,tons/sq. ft
+barn,1E-28,square metre
+barrels (US dry),7056,cu. inches
+barrels (US dry),105,quarts (dry)
+"barrels (US, liquid)",31.5,gallons
+barrels (oil),158.9873,litre (L or l)
+barrels (oil),42,gallons (oil)
+bars,0.9869,atmospheres
+bars,1000000,dynes/sq. cm
+bars,10200,kgs/sq. metre
+bars,100000,pascal
+bars,100,kilopascals (kPa)
+bars,2089,pounds/sq. ft
+bars,14.5,pounds/sq. in
+biot,10,ampere (A)
+bolt (US cloth),36.576,metres
+Btu [more Btu converts here],10600000000,ergs
+Btu (39 deg.F),1059.67,joules (J)
+Btu/hr (international table),0.2930711,watts
+bucket (Brit. dry),18180,cubic cm
+bushels (UK),0.03636872,cu. metres
+bushels (USA),0.03523907,cu. metres
+bushels,1.2445,cu. ft
+bushels,2150.4,cu. in
+bushels,35.24,litres
+bushels,4,pecks
+bushels,64,pint (dry)
+bushels,32,quarts (dry)
+cc ( cu.cm. ),see tables,horsepower ( hp )
+cable,0.1,mile (nautical)
+cable,185.3,metres ( m )
+caliber,0.01,inches ( in )
+caliber,0.254,millimetres ( mm )
+"calorie, gram (mean)",0.00396832,Btu (mean)
+calorie,1.56E-06,horsepower-hour
+calorie,1.58E-06,horsepower-hour (metric)
+calorie (international table),4.1868,joule ( J )
+calorie (thermochemical),4.184,joule
+calorie (15 degree C),4.1855,joule
+calorie (20 degree C),4.1819,joule
+calorie (mean),4.19002,joule
+calorie (int) per hr,0.001163,watt ( W )
+calorie (thermo) /sq. cm. min,697.3333,watt per sq. metre
+calorie,1.16E-06,kilowatt-hour ( kWhr )
+candela per square inch,1550.003,candela per sq. metre
+candle/sq. cm,3.142,lamberts
+candle/sq. inch,0.487,lamberts
+carat (metric),0.2,gram ( g )
+celsius (degree C),1.8 + 32,degree Fahrenheit
+centares (centiares),1,sq. metres
+centigrams,0.01,grams
+centilitre,0.3382,ounce fluid (US)
+centilitre,0.6103,cubic inch
+centilitre,2.705,drams
+centilitres,0.01,litres ( liters )
+centimetres,0.03281,feet ( ft )
+centimetres ( cm ),0.3937,inches
+centimetres,1E-05,kilometres
+centimetres,0.01,metres
+centimetres,6.21E-06,miles
+centimetres,10,millimetres
+centimetres,393.7,mils
+centimetres,0.01094,yards ( yd )
+centimetres-dynes,0.00102,cm-grams
+centimetre-dynes,1.02E-08,metre-kgs
+centimetre-dynes,7.38E-08,pound-feet
+centimetre-grams,980.7,cm-dynes
+centimetre-grams,1E-05,metre-kgs
+centimetre-grams,0.07233,pound-feet
+centimetres of mercury (0degC),1333.2239,pascal
+centimetres of mercury,0.01316,atmospheres
+centimetres of mercury,0.4461,feet of water
+centimetres of mercury,136,kgs/sq. metre
+centimetres of mercury,27.85,pounds/sq. ft
+centimetres of mercury,0.1934,pounds/sq. in ( psi )
+centimetres of water (4 deg.C),98.0638,pascal
+centimetres of water (conventional),98.0665,pascal
+centimetres/sec,1.1969,feet/min
+centimetres/sec,0.03281,feet/sec
+centimetres/sec,0.036,kilometres/hr
+centimetres/sec,0.1943,knots
+centimetres/sec,0.6,metres/min
+centimetres/sec,0.02237,miles/hr
+centimetres/sec,0.0003728,miles/min
+centimetres/sec/sec,0.03281,feet/sec/sec
+centimetres/sec/sec,0.036,km/hr/sec
+centimetres/sec/sec,0.01,metres/sec/sec
+centimetres/sec/sec,0.02237,miles/hr/sec
+centipoise,0.001,pascal second (Pa-s)
+centistokes,1E-06,metre sq. per second
+cfm (cubic feet/min),472,cu. cm/sec
+chain,792,inches
+chain (engineers or Ramden's),30.48,metres
+chain (surveyor's or Gunter's),20.12,metres
+chain (US survey foot),20.11684,metres
+chain (surveyor's or Gunter's),22,yards
+cheval vapeur (metric hp),735.499,watt
+circular mils,5.07E-06,sq. cm
+circular mils,0.7854,sq. mils
+circular mils,7.85E-07,sq. inches
+circumference ( circ ),6.283,radians
+clo,0.2003712,kelvin sq. metre per watt
+clo (alternative info source),0.155,kelvin sq. metre per watt
+"clothing (men, women, kids)",see tables,"size, inches, cm"
+clusec,1.333224E-06,pascal cu. metre per sec.
+cords,8,cord feet
+cords,3.624556,cubic metres
+cord feet,16,cu. feet
+coulomb,3000000000,statcoulombs
+coulombs,1.04E-05,faradays
+coulombs/sq. cm,64.52,coulombs/sq. in
+coulombs/sq. cm,10000,coulombs/sq. metre
+coulombs/sq. in,0.155,coulombs/sq. cm
+coulombs/sq. in,1550,coulombs/sq. metre
+coulombs/sq. metre,0.0001,coulombs/sq. cm
+coulombs/sq. metre,0.0006452,coulombs/sq. in
+cubic centimetre ( cu.cm. ),3.53E-05,cu. foot
+cubic centimetre,0.06102374,cu. inch
+cubic centimetre,1E-06,cu. metre
+cubic centimetre,1000,cu. millimetre
+cubic centimetre,1.31E-06,cu. yard
+cubic centimetre,0.2815606,drachm (Brit. fluid)
+cubic centimetre,0.2705122,dram (U.S. fluid)
+cubic centimetre,0.00022,gallon (Brit liq.)
+cubic centimetre,0.000264,gallon (US liq.)
+cubic centimetre ( cc ),0.001,litre ( to hp )
+cubic centimetre,0.002113,pint (US liq.)
+cubic centimetre,0.001057,quart (US liq.)
+cubic feet ( cu.ft. ),0.8036,bushels (dry)
+cubic feet ( ft3 ),28320,cu. cm
+cubic feet ( ft^3 ),1728,cu. inches
+cubic feet,0.02831685,cu. metres
+cubic feet,0.037037037,cu. yards
+cubic feet,7.48052,gallons (US liq.)
+cubic feet,28.32,litres
+cubic feet,59.84,pints (US liq.)
+cubic feet,29.92,quarts (US liq)
+cubic feet/min ( cfm ),472,cu. cm/sec
+cubic feet/min ( ft3/min ),0.1247,gallons/sec
+cubic feet/min,0.4719474,litres/sec
+cubic feet/min,62.43,pounds of water/min
+cubic feet/sec,0.646317,million gals./day
+cubic feet/sec,448.831,gallons/min
+cubic inches ( cu.in. ),16.387,cu. cm ( cc ) ( to hp)
+cubic inches,0.0005787,cu. feet
+cubic inches,1.6387064E-05,cu. metres
+cubic inches,2.14E-05,cubic yards
+cubic inches,0.004329,gallons
+cubic inches,106100,mil-feet
+cubic inches,0.03463,pints (US liq.)
+cubic inches,0.01732,quarts (US liq.)
+cubic inches per minute,2.731177E-07,cu. metres/ second
+cubic metres ( cu.m. ),28.38,bushels (dry)
+cubic metres,1000000,cubic cm
+cubic metres,35.31,cubic feet
+cubic metres,61023,cubic inches
+cubic metres,1.307951,cubic yards
+cubic metres,264.2,gallons (US liq.)
+cubic metres,1000,litres
+cubic metres,2113,pints (US liq.)
+cubic metres,1057,quarts (US liq.)
+cubic miles,4168182000,cubic metres
+cubic yards ( cu.yd. ),764600,cubic cms
+cubic yards ( yd3 ),27,cubic feet
+cubic yards,46656,cubic inches
+cubic yards,0.7645549,cubic metres
+cubic yards,202,gallons (US liq.)
+cubic yards,764.6,litres
+cubic yards,1615.9,pints (US liq.)
+cubic yards,807.9,quarts (US liq.)
+cubic yards/min,0.45,cubic feet/sec
+cubic yards/min,3.367,gallons/sec
+cubic yards/min,12.74,litres/sec
+cubic yards/min,0.01274258,cubic metres/ sec
+cup (USA),236.5882,cubic cm
+cup (UK),0.0002841306,cu. metre
+curie (Ci),37000000000,becquerel (Bq)
+cusec hour,101.9407,cu. metre
+darcy,9.869233E-13,square metres
+days (mean solar),86400,seconds
+days (sidereal) (more on time),86164.09,seconds
+debye,3.335641E-30,coulomb metre
+decigrams,0.1,grams
+decilitres,0.1,litres
+decimetres,0.1,metres
+degrees Fahrenheit,-32 x 0.55555,degrees Celsius
+degrees (angle),0.01111,quadrants
+degrees (angle),0.01745329,radians
+degrees (angle),3600,seconds
+degrees/sec,0.01745,radians/sec
+degrees/sec,0.1667,revolutions/min
+degrees/sec,0.002778,revolutions/sec
+dekagrams,10,grams
+dekalitres,10,litres
+dekametres,10,metres
+denier,0.0001111111,gram per metre
+denier,1,gram per 9000 metre
+dioptre,1,per metre
+drachm (fluid) (UK) ( medical ),0.003551633,cu. metre
+drams(apoth. or troy),0.1371429,ounces(avoirdupois)
+drams(apoth. or troy),0.125,ounces (troy)
+drams(US fluid or apoth.),3.6967,cubic cm
+drams,27.3437,grains
+drams,1.7718,grams
+drams,0.0625,ounces
+drill size,see table,tap thread
+drops (also see kitchen),0.01666,teaspoons US
+dyne/cm,0.01,erg/sq. millimetre
+dyne/sq. cm,9.87E-07,atmospheres
+dyne/sq. cm,2.95E-05,inch of mercury at 0°C
+dyne/sq. cm,0.0004015,inch of water at 4°C
+dynes,0.00102,grams
+dynes,1E-07,joules/cm
+dynes,1E-05,joules/metre (newtons)
+dynes,1.02E-06,kilograms
+dynes,7.23E-05,poundals
+dynes,2.25E-06,pounds
+dyne cm,1E-07,newton metre
+dyne per sq. cm,0.1,pascal (Pa)
+dynes/sq. cm,1E-06,bars
+electromagnetic unit of capacitance,1000000000,farad (F)
+electromagnetic unit of charge,10,coulomb (C)
+electromagnetic unit of current,10,ampere (A)
+electromagnetic unit of inductance,1E-09,henry (H)
+electromagnetic unit of potential,1E-08,volt (V)
+electromagnetic unit of resistance,1E-09,ohm ()
+electronvolt,1.6021917E-19,joule (J)
+electrostatic unit of capacitance,1.112649E-12,farad
+electrostatic unit of charge (franklin),3.33564E-10,coulomb
+electrostatic unit of current,3.33564E-10,ampere
+electrostatic unit of inductance,898755431000,henry
+electrostatic unit of potential,299.7925,volt
+electrostatic unit of resistance,898755431000,ohm
+ell,114.3,cm
+ell,45,inches
+em (pica),0.167,inch
+em (pica),0.4233,cm
+"envelopes, sheet paper",see table,metric/UK/US
+erg/sec,1,dyne-cm/sec
+ergs,9.48E-11,Btu
+ergs,1,dyne-centimetres
+ergs,7.37E-08,foot-pounds
+ergs,2.39E-08,gram-calories
+ergs,0.00102,grams-cm
+ergs,3.73E-14,horsepower-hrs
+ergs,1E-07,joules
+ergs,2.39E-11,kg-calories
+ergs,1.02E-08,kg-metres
+ergs,2.78E-14,kilowatt-hrs
+ergs,2.78E-11,watt-hrs
+ergs/sec,5.69E-06,Btu/min
+ergs/sec,4.43E-06,ft-lbs/min
+ergs/sec,7.38E-08,ft-lbs/sec
+ergs/sec,1.34E-10,horsepower
+ergs/sec,1.43E-09,kg-calories/min
+ergs/sec,1E-07,watts
+fahrenheit (°F),-32 x 0.55555,celsius (°C)
+farads,1E-06,microfarads
+farad (international of 1948),0.999505,farad
+faraday/sec,96500,ampere (absolute)
+faradays,26.8,ampere-hours
+faraday (based on carbon- 12),96485.31,coulomb
+faraday (chemical),96495.7,coulomb per mole
+faraday (physical),96521.9,coulomb per mole
+fathoms,1.828804,metre
+fathoms,6,feet
+fathoms,15,shackle
+feet (ft.),30.48,centimetres
+feet,0.0003048,kilometres
+"feet, inches, fractions",calculator here,"metres, cm, mm"
+feet (English Imperial),0.3048,metres
+feet (US survey),0.3048006,metres
+feet (Cape),0.3148581,metres
+feet (geodetic Cape),0.314855575,metres
+feet,0.0001645,miles (naut.)
+feet,0.0001894,miles (stat.)
+feet,304.8,millimetres
+feet,12000,mils
+feet of water,0.0295,amospheres
+feet of water,0.8826,in. of mercury
+feet of water,0.03048,kgs/sq. cm
+feet of water,304.8,kgs/sq. metre
+feet of water,62.43,pounds/sq. ft
+feet of water,0.4335,pounds/sq. in
+feet/min (fpm),0.508,cms/sec
+feet/min,0.01667,feet/sec
+feet/min,0.01829,kms/hr
+feet/min,0.3048,metres/min
+feet/min,0.01136,miles/hr
+feet/sec,30.48,cms/sec
+feet/sec,1.097,kms/hr
+feet/sec,0.5921,knots
+feet/sec,18.29,metres/min
+feet/sec,0.6818,miles/hr
+feet/sec,0.01136,miles/min
+feet/sec/sec,30.48,cms/sec/sec
+feet/sec/sec,1.097,kms/hr/sec
+feet/sec/sec,0.3048,meters/sec/sec
+feet/sec/sec,0.6818,miles/hr/sec
+feet/100 feet,1,percent grade
+fermi,1E-15,metre
+foot (ft. - singular of feet),0.3048,metre
+foot (Cape),0.3148581,metre
+foot (geodetic Cape),0.314855575,metre
+foot (South African geodetic),0.304797265,metre
+foot-candle,10.76391,lumen/sq. metre
+foot lambert,3.426259,candela per sq. metre
+foot-pounds,0.001286,Btu
+foot-pounds,13600000,ergs
+foot-pounds,0.3238,gram-calories
+foot-pounds,5.05E-07,hp-hrs
+foot-pounds,1.355818,joules
+foot-pounds,0.000324,kg-calories
+foot-pounds,0.1383,kg-metres
+foot-pounds,3.77E-07,kilowatt-hrs
+foot-pounds/min,0.001286,Btu/min
+foot-pounds/min,0.01667,foot-pounds/sec
+foot-pounds/min,3.03E-05,horsepower
+foot-pounds/min,0.000324,kg-calories/min
+foot-pounds/min,0.0226,watts
+foot-pounds/sec,4.6263,Btu/hr
+foot-pounds/sec,0.07717,Btu/min
+foot-pounds/sec,0.000818,horsepower
+foot-pounds/sec,1.01945,kg-calories/min
+foot-pounds/sec,1.355818,watts
+footE+04 (second moment of area),0.008630975,metre to the fourth power
+franklin (Fr),3.3356641E-10,coulomb (C)
+frigorie,1.162639,watt
+furlongs,0.125,miles (US)
+furlongs,40,rods
+furlongs,660,feet
+ft,1,foot or feet
+gal,0.01,metre per sec sq.
+gallons (Imperial),0.00454609,cubic metres
+gallons (Imperial),4.54609,litres
+gallons (US),3785.412,cubic cm (cc)
+gallons (US),0.1337,cubic feet
+gallons (US),231,cu. inches
+gallons (US),0.003785,cu. metres
+gallons (US),0.004951,cu. yards
+gallons (US),3.785412,litres
+gallons (liq. British imp.),1.20094,gallons (US liq.)
+gallons (US),0.83267,gallons (imp.)
+gallons (US) of water,8.3453,pounds of water
+gallons (Imperial) of water,10,pounds of water
+gallons(US)/min,0.002228,cu. ft/sec
+gallons(US)/min,0.0630902,litres/sec
+gallons(Imperial)/min,0.07577,litres/sec
+gallons(US)/min,8.0208,cu. feet/hr
+gamma (magnetic induction),1E-09,tesla ( T )
+gamma (mass),1E-09,kilogram
+gauge (sheet metal),see table,mm thick
+gauge (wire - SWG to AWG),see table,inches diameter
+gauss,0.0001,tesla
+gauss,6.452,lines/sq. inch
+gauss,1E-08,webers/sq. cm
+gauss,6.45E-08,webers/sq. inch
+gauss,0.0001,webers/sq. metre
+gilberts,0.7957747,ampere-turns
+gilberts/cm,0.7958,amp-turns/cm
+gilberts/cm,2.021,amp-turns/in
+gilberts/cm,79.581,amp-turns/metre
+gills (British),142.0653,cubic cm
+gills (US),0.1183,litres
+gills (US),0.25,pints (liq.)
+gon or grade,0.01570796,radian (pi/200)
+grains ( see medical page ),0.03657143,drams (avoirdupois)
+grains (troy),1,grains (avoirdupois)
+grains (troy),0.06479891,grams
+grains (troy),0.0020833,ounces (avoirdupois)
+grains (troy),0.04167,pennyweight (troy)
+grains/US gallon,17.118,parts/million
+grains/Imperial gallon,14.2538,parts/million
+grains/US gallon,142.86,pounds/million
+grains/imp. gallon,14.286,gal parts/million
+grams,5,carat (metric)
+grams,0.56438339,dram
+grams,980.7,dynes
+grams,15.43,grains
+grams,9.81E-05,joules/cm
+grams,0.00981,joules/metre (newtons)
+grams,0.001,kilograms
+grams,1000,milligrams
+grams,0.035273962,ounces(avoirdupois)
+grams,0.032150747,ounces (troy)
+grams,0.07093,poundals
+grams,0.002204623,pounds
+grams/cm,0.0056,pounds/inch
+grams/cu. cm,62.43,pounds/cu. ft
+grams/cu. cm,0.03613,pounds/cu. in
+grams/cu. cm,3.41E-07,pounds/mil-foot
+grams/litre,58.417,grains/gal (US)
+grams/litre,8.345,pounds/1000 gal
+grams/litre,0.062427,pounds/cu. ft
+grams/litre,1000,parts/million
+grams/sq. cm,2.0481,pounds/sq. ft
+grams force/sq.cm,98.0665,pascal
+gram-calories,0.0039683,Btu
+gram-calories,4.19E-07,ergs
+gram-calories,3.088,foot-pounds
+gram-calories,1.56E-06,horsepower-hrs
+gram-calories,1.16E-06,kilowatt-hrs
+gram-calories,0.001163,watt-hrs
+gram-calories/sec,14.286,Btu/hr
+gram-calories,9.3E-08,Btu
+gram-centimetres,980.7,ergs
+gram-centimetres,980700,joules
+gram-centimetres,234000000,kg-cal
+gram-centimetres,100000,kg-metres
+hand,10.16,cm
+hectares (10000 sq.m),2.471,acres
+hectares,107600,sq. feet
+hectograms,100,grams
+hectolitres,100,litres
+hectometres,100,metres
+hectowatts,100,watts
+henries,1000,millihenries
+hogsheads (British),10.114,cubic feet
+hogsheads (U.S.),8.42184,cubic feet
+hogsheads (U.S.),63,gallons (U.S.)
+horsepower,42.44,Btu/min
+horsepower,33000,foot-lbs/min
+horsepower,550,foot-lbs/sec
+horsepower (metric),0.9863,horsepower
+horsepower,10.68,kg-calories/min
+horsepower,0.7457,kilowatts
+horsepower (boiler),33479,Btu/hr
+horsepower (boiler),9809.5,watts
+horsepower (metric),735.4988,watts
+horsepower (electric),746,watts
+horsepower,see tables,cc and cu.in. (approx)
+horsepower (UK),745.7,watts
+horsepower (water),746.043,watts
+horsepower-hrs,2547,Btu
+horsepower-hrs,26800000000000,ergs
+horsepower-hrs,1980000,foot-lbs
+horsepower-hrs,641190,gram-calories
+horsepower-hrs,2684000,joules
+horsepower-hrs,641.1,kg-calories
+horsepower-hrs,273700,kg-metres
+horsepower-hrs,0.7457,kilowatt-hrs
+hours (mean solar),0.04166667,days (more on time)
+hours (mean solar),0.005952381,weeks
+hundredweights (cwt) (long),112,pounds (lbs)
+hundredweights (long),0.05,tons (long)
+hundredweights (short),1600,ounces (avoirdupois)
+hundredweights (short),100,pounds (lbs)
+hundredweights (short),0.0453592,tonnes (metric)
+hundredweights (short),0.0446429,tons (long)
+imperial measurements,see page,"time, money, units, etc."
+"inches, in, ins. and fractions",convert here,"metres, cm, mm"
+inches,2.54,centimetres
+inches,0.08333333,feet
+inches,0.0254,metres
+inches,1.578E-05,miles
+inches,25.4,millimetres
+inches,1000,mils
+inches,0.027777778,yards
+inches of mercury (at 32deg.F),3386.389,pascal
+inches of mercury,0.03342,atmospheres
+inches of mercury,1.133,feet of water
+inches of mercury,0.03453,kgs/sq. cm
+inches of mercury,345.3,kgs/sq. metre
+inches of mercury,70.73,pounds/sq. ft.
+inches of mercury,0.4912,pounds/sq. in.
+inches of water (at 4ºC),0.002458,atmospheres
+inches of water (at 4ºC),0.07355,inches of mercury
+inches of water (at 4ºC),0.00254,kgs/sq. cm
+inches of water (at 4ºC),0.5781,ounces/sq. in
+inches of water (at 4ºC),5.204,pounds/sq. ft
+inches of water (at 4ºC),0.03613,pounds/sq. in
+international ampere,0.9998,ampere (absolute)
+international volt,1.59E-19,joules (absolute)
+international volt,96540,joules
+iron (shoes),0.00053,metre
+joules,0.000948,Btu
+joules,10000000,ergs
+joules,0.7376,foot-pounds
+joules,0.0002389,kg-calories
+joules,0.102,kg-metres
+joules,0.0002778,watt-hrs
+joules/cm,10200,grams
+joules/cm,10000000,dynes
+joules/cm,100,joules/metre (newton)
+joules,723.3,poundals
+joules,22.48,pounds
+"k , k's or klicks (slang)",- see -,kilometres (km)
+kayser,100,reciprocal metre
+kelvin,t/ºC=T/K-273.15,degree Celsius
+kilos (slang),- see -,kilograms
+kilograms (kg),980665,dynes
+kilograms,1000,grams
+kilograms,0.09807,joules/cm
+kilograms,9.807,joules/metre (newtons)
+kilograms,70.93,poundals
+kilograms,2.2046,pounds
+kilograms,0.000984,tons (long)
+kilograms,0.0011,tons (short)
+kilograms/cu metre,0.001,grams/cu cm
+kilograms/cu metre,0.06243,pound/cu ft
+kilograms/cu metre,3.61E-05,pounds/cu in
+kilograms/cu metre,3.41E-10,pounds/mil-foot
+kilograms/meter,0.672,pounds/ft
+kilograms/sq cm,980665,dynes
+kilograms/sq cm,0.9678,atmospheres
+kilograms/sq cm,32.81,feet of water
+kilograms/sq cm,28.96,inches of mercury
+kilograms/sq cm,2048,pounds/sq ft
+kilograms/sq cm,14.22,pounds/sq in
+kilograms/sq metre,9.68E-05,atmospheres
+kilograms/sq metre,9.81E-05,bars
+kilograms/cu metre,0.00328,feet of water
+kilograms/cu metre,0.0029,inches of mercury
+kilograms/cu metre,0.2048,pounds/sq ft
+kilograms/cu metre,0.00142,pounds/sq in
+kilograms/sq mm,1000000,kgs/sq metre
+kilogram-calories,3.968,Btu
+kilogram-calories,3088,foot-pounds
+kilogram-calories,0.00156,hp-hrs
+kilogram-calories,4186,joules
+kilogram-calories,426.9,kg-metres
+kilogram-calories,4.186,kilojoules
+kilogram-calories,0.00116,kilowatt-hrs
+kilogram-metres,0.00929,Btu
+kilogram-metres,98000000,ergs
+kilogram-metres,7.233,foot-pounds
+kilogram-metres,9.804,joules
+kilogram-metres,0.00234,kg-calories
+kilogram-metres,2.72E-06,kilowatt-hrs
+kilogram-force metres,9.80665,newton metres
+kilolines,1000,maxwells
+kilolitres,1000,litres
+kilometres,6.68E-09,astronomical unit
+kilometres,100000,centimetres
+kilometres,3280.84,feet
+kilometres,39400,inches
+kilometres,1.06E-13,light year
+kilometres,1000,metres
+kilometres,0.6214,miles
+kilometres,1000000,millimetres
+kilometres,1094,yards
+kilometres/hr,27.78,cms/sec
+kilometres/hr,54.68,feet/min
+kilometres/hr,0.9113,feet/sec
+kilometres/hr,0.5396,knots
+kilometres/hr,16.67,metres/min
+kilometres/hr,0.6214,miles/hr
+kilometres/hr/sec,27.78,cms/hr/sec
+kilometres/hr/sec,0.9113,ft/sec/sec
+kilometres/hr/sec,0.2778,metres/sec/sec
+kilometres/hr/sec,0.6214,miles/hr/sec
+kilopond (= kg force)(kp),9.80665,newton
+kilowatts,56.92,Btu/min
+kilowatts,44300,foot-lbs/min
+kilowatts,737.6,foot-lbs/sec
+kilowatts,1.341,horsepower
+kilowatts,14.34,kg-calories/min
+kilowatts,1000,watts
+kilowatt-hrs,3413,Btu
+kilowatt-hrs,36000000000000,ergs
+kilowatt-hrs,2660000,foot-lbs
+kilowatt-hrs,859850,gram-calories
+kilowatt-hrs,1.341,horsepower-hrs
+kilowatt-hrs,3600590,joules
+kilowatt-hrs,860.5,kg-calories
+kilowatt-hrs,367000,kg-metres
+kilowatt-hrs,3.53,lbs of water evap. at 212ºF
+kilowatt-hrs,22.75,lbs of water ^ from 62º-212ºF
+kilowatt-hrs,4448.222,newton
+knots,6080,feet/hr
+knots,1.8532,kilometres/hr
+knots,1,nautical miles/hr
+knots,1.151,statute miles/hr ( mph )
+knots,2027,yards/hr
+knots,1.689,feet/sec
+knots,0.5144444,metre per second ( m/s )
+lambda,1E-09,cu. metre
+lambert,3183.099,candela per sq. metre
+langley,41840,joule per sq. metre
+"lb, lbs (short for 'pounds')",0.4536,kilograms
+lea (thread),see table,"ypp, nm, tex"
+league,3,miles (approx.)
+leaguer,0.5773534,cu. metre
+light-year,63239.7,astronomical unit
+light-year,5900000000000,miles
+light-year,9460730000000,kilometres
+ligne (buttons),0.000635,metre
+lines/sq cm,1,gausses
+lines/sq in,0.155,gauses
+lines/sq in,1.55E-09,webers/sq cm
+lines/sq in,1E-08,webers/sq in
+lines/sq in,1.55E-05,webers/sq metre
+links (engineer's),12,inches
+links (surveyor's),7.92,inches
+litres,0.02838,bushels (U.S. dry)
+litres,1000,cu cm
+litres,0.03531,cu feet
+litres,61.02,cu inches
+litres,0.001,cu metres
+litres,0.00131,cu yards
+litres,0.2642,gallons (U.S. liq.)
+litres,2.113,pints (U.S. liq.)
+litres,1.057,quarts (U.S. liq.)
+litres/min,0.000589,cu ft/sec
+litres/min,0.0044,gals/sec
+lumen (lm),0.07958,spherical candle power
+lumen,0.001496,watt
+lumens/sq ft,1,foot-candles
+lumens/sq ft,10.76,lumen/sq metre
+lumens/sq ft,10.76391,lux (lx)
+lusec,0.0001333224,pascal cu. metre per sec.
+lux,0.0929,foot-candles
+mass of bulk materials,see table,kg per cubic metre
+maxwells,0.001,kilolines
+maxwells,1E-08,webers
+megalines,1000000,maxwells
+megohms,1000000000000,microhms
+megohms,1000000,ohms
+metres,100,centimetres
+metres (calc to ft. & ins.),3.281,feet
+metres,39.37,inches
+metres,0.001,kilometres
+metres,0.00054,miles (nautical)
+metres,0.000621,miles (statute)
+metres,1000,millimetres
+metres,1.094,yards
+metres/min,1.667,cms/sec
+metres/min,3.281,feet/min
+metres/min,0.05468,feet/sec
+metres/min,0.06,kms/hr
+metres/min,0.03238,knots
+metres/min,0.03728,miles/hr
+metres/sec,196.8,feet/min
+metres/sec,3.281,feet/sec
+metres/sec,3.6,kilometres/hr
+metres/sec,0.06,kilometres/min
+metres/sec,2.237,miles/hr
+metres/sec,0.03728,miles/min
+metres/sec/sec,100,cms/sec/sec
+metres/sec/sec,3.281,ft/sec/sec
+metres/sec/sec,3.6,kms/hr/sec
+metres/sec/sec,2.237,miles/hr/sec
+metre-kilograms,98100000,cm-dynes
+metre-kilograms,100000,cm-grams
+metre-kilograms,7.233,pound-feet
+microfarad,1E-06,farads
+micrograms (see medical page),1E-06,grams
+microhms,1E-12,megohms
+microhms,1E-06,ohms
+microlitres,1E-06,litres
+microns,1E-06,metres
+miles (nautical),6080.27,feet
+miles (nautical),1.852,kilometres
+miles (nautical),1852,metres
+miles (nautical),1.1516,miles (statute)
+miles (nautical),2027,yards
+miles (statute),161000,centimetres
+miles (statute),5280,feet
+miles (statute),63400,inches
+miles (statute),1.609,kilometres
+miles (statute),1609,metres
+miles (statute),0.8684,miles (nautical)
+miles (statute),1760,yards
+miles/hr,44.7,cm/sec
+miles/hr,88,feet/min
+miles/hr,1.467,feet/sec
+miles/hr,1.609344,kms/hr
+miles/hr,0.02682,kms/min
+miles/hr,0.8684,knots
+miles/hr,26.82,metres/min
+miles/hr,0.1667,miles/min
+miles/hr/sec,44.7,cms/sec/sec
+miles/hr/sec,1.467,feet/sec/sec
+miles/hr/sec,1.609,kms/hr/sec
+miles/hr/sec,0.447,metres/sec/sec
+miles/min,2682,cms/sec
+miles/min,88,feet/sec
+miles/min,1.609,kms/min
+miles/min,0.8684,knots/min
+miles/min,60,miles/hr
+mil-feet,9.43E-06,cu inches
+milliers,1000,kilograms
+millmicrons,1E-09,metres
+millibars,100,pascals
+millibars,0.0295299,inches of mercury
+milligrams,0.01543236,grains
+milligrams,0.001,grams
+milligrams/litre,1,parts/million
+millihenries,0.001,henries
+millilitres,0.001,litres
+millimetres,0.1,centimetres
+millimetres,0.00328,feet
+millimetres,0.03937,inches
+millimetres,1E-06,kilometres
+millimetres,0.001,meters
+millimetres,6.21E-07,miles
+millimetres,39.37,mils
+millimetres,0.00109,yards
+million gals/day,1.54723,cu ft/sec
+mils,0.00254,centimetres
+mils,8.33E-05,feet
+mils,0.001,inches
+mils,0.0254,millimeters
+mils,2.78E-05,yards
+minims (British)( medical ),0.059192,cubic cm
+minims (US fluid),0.061612,cubic cm
+minutes (angles),0.01667,degrees
+minutes (angles),0.000185,quadrants
+minutes (angles),0.000291,radians
+minutes (angles),60,seconds
+morgen,8565.32,sq. metre
+minutes ( more time units ),60,seconds
+nautical mile (international),1852,metre
+nel (thread),see table,"ypp, nm, tex"
+nepers,8.686,decibels
+newton,100000,dynes
+newton,0.2248,pound force (lbf)
+oersted,79.57747,ampere per metre
+ohm (international),1.0005,ohm (absolute)
+ohms,1E-06,megohms
+ohms,1000000,microhms
+ounces ( oz. or ozs.),16,drams
+ounces ( mass ),437.5,grains
+ounces,28.349523,grams
+ounces,28349.523,milligrams
+ounces,0.0625,pounds
+ounces ( avoirdupois ),0.9115,ounces (troy)
+ounces,2.79E-05,tons (long)(UK)
+ounces,2.84E-05,tonnes (metric)
+ounces - kitchen data,see tables,conversions
+ounces (fluid),1.805,cu inches
+ounces (fluid),0.02957,liters
+ounces (troy),480,grains
+ounces (troy),31.103481,grams
+ounces (troy),1.09714,ounces (avoirdupois)
+ounces (troy),20,pennyweights (troy)
+ounces (troy),0.08333,pounds (troy)
+ounces/sq inch,4309,dynes/sq cm
+ounces/sq inch,0.0625,pounds/sq in
+oz or ozs (short for ounce),28.349523,grams
+"paper, envelopes",see table,metric/UK/US
+parsec,19000000000000,miles
+parsec,30856780000000,kilometres
+ppm = parts per million,0.058419,grains/U.S. gal.
+parts/million (see table),0.07016,grains/imperial gal
+parts/million,8.345,pounds/million gal
+pecks (British),554.6,cubic inches
+pecks (British),9.091901,litres
+pecks (US),0.25,bushels
+pecks (US),537.605,cubic inches
+pecks (US),8.809768,litres
+pecks (US),8,quarts (dry)
+pennyweights (troy),24,grains
+pennyweights (troy),0.05,ounces (troy)
+pennyweights (troy),1.555174,grams
+pennyweights (troy),0.00417,pounds (troy)
+perch (area),25.2929,sq. metre
+perch (length),5.0292,metre
+perm (0deg.C),5.72135E-11,kg. per pascal sec sq.m.
+perm inch (0deg.C),1.45322E-12,kg. per pascal sec m.
+phot,10000,lux
+pica (printing),4.217518,millimetre
+pica (computer),4.233333,millimetre
+pieze,1000,pascal
+pints (Brit.) ( pts. ),568.26125,cu centimetres
+pints (Brit.),34.67743,cu inches
+pints (Brit.),0.125,gallons (Brit.)
+pints (Brit.),4,gills (Brit.)
+pints (Brit.),0.56826125,litres
+pints (Brit.),568.26125,millilitres
+pints (Brit.),20,ounces (Brit. fluid)
+pints (Brit.),1.032057,pints (US dry)
+pints (Brit.),1.20095,pints (US liquid)
+pints (US dry),550.6105,cu centimeters
+pints (US dry),33.6003125,cu inches
+pints (US dry),0.5506105,litres
+pints (US dry),550.6105,millitres
+pints (US dry),0.0625,peck (US)
+pints (US dry),0.968939,pint (Brit. dry)
+pints (US dry),0.5,quarts (US dry)
+pints (US liquid),473.1765,cu cm
+pints (US liquid),0.01671,cu feet
+pints (US liquid),28.875,cu inches
+pints (US liquid),0.000473,cu metres
+pints (US liquid),0.000619,cu yards
+pints (US liquid),0.125,gallons (US)
+pints (US liquid),4,gills (US)
+pints (US liquid),0.4731765,litres
+pints (US liquid),473.1765,millilitres
+pints (US liquid),16,ounce (US fluid)
+pints (US liquid),0.8326742,pints (Brit. liquid)
+pints (US liquid),0.5,quarts (liquid)
+Plank's quantum,6.62E-27,erg-second
+point (printing),0.3514598,millimetre
+point (computer),0.3527778,millimetre
+poise (P),0.1,pascal sec
+poiseuille,1,pascal sec
+pole (area),25.2929,metre
+pole (length),5.0292,metre
+poundals,13826,dynes
+poundals,14.1,grams
+poundals,0.00138,joules/cm
+poundals,0.138255,joules/metre (newtons)
+poundal per sq. ft.,1.488164,pascal (Pa)
+poundals,0.0141,kilograms
+poundals,0.03108,pounds
+pounds ( lbs ),256,drams
+pounds,445000,dynes
+pounds,7000,grains
+pounds,453.5924,grams
+pounds,0.04448,joules/cm
+pounds,4.448,joules/metre (newtons)
+pound ( lb. ),0.4536,kilograms
+pounds,16,ounces
+pounds,14.5833,ounces (troy)
+pounds,32.17,poundals
+pounds,1.21528,pounds (troy)
+pounds,0.07142857,stones (British)
+pounds,0.0005,tons (short)
+pounds (troy),5760,grains
+pounds (troy),373.24177,grams
+pounds (troy),13.1657,ounces (avoirdupois)
+pounds (troy),12,ounces (troy)
+pounds (troy),240,pennyweights (troy)
+pounds (troy),0.822857,pounds (avoirdupois)
+pounds (troy),0.000367,tons (long)
+pounds (troy),0.000373,tonnes (metric)
+pounds (troy),0.000411,tons (short)
+pounds of water,0.01602,cu feet
+pounds of water,27.68,cu inches
+pounds of water,0.1198,gallons
+pounds of water/min,0.000267,cu ft/sec
+pound-feet,13600000,cm-dynes
+pound-feet,13825,cm-grams
+pound-feet,0.1383,meter-kgs
+pound force (lbf),4.448,newton
+pounds/cu ft,0.01602,grams/cu cm
+pounds/cu ft,16.02,kgs/cu metre
+pounds/cu ft,0.000579,pounds/cu in
+pounds/cu ft,5.46E-09,pounds/mil-foot
+pounds/cu in,27.68,gms/cu cm
+pounds/cu in,27700,kgs/cu metre
+pounds/cu in,1728,pounds/cu ft
+pounds/cu in,9.43E-06,pounds/mil-foot
+pounds/ft,1.488,kgs/metre
+pounds/in,178.6,gms/cm
+pounds/mil-foot,2310000,gms/cu cm
+pounds/sq ft,0.000473,atmospheres
+pounds/sq ft,0.01602,feet of water
+pounds/sq ft,0.01414,inches of mercury
+pounds/sq ft,4.882428,kgs/sq metre
+pounds/sq ft,0.00694,pounds/sq in
+pounds/sq in,0.06804,atmospheres
+pounds/sq in,2.307,feet of water
+pounds/sq in,2.036,inches of mercury
+pounds/sq in (not pound force!),703.0696,kgs/sq metre
+pounds/sq in,144,pounds/sq ft
+pounds/sq.in,6894.757,pascal (Pa)
+psi (pounds-force/sq.in),6.894757,kilopascal (kPa)
+quad,1.055056E+018,joules
+quadrants (angle),90,degrees
+quadrants (angle),5400,minutes
+quadrants (angle),1.571,radians
+quadrants (angle),324000,seconds
+quarter (2 stone),12.70059,kilogram
+quarts (dry),67.2,cu inches
+quarts (liquid),946.4,cu cms
+quarts (liquid),0.03342,cu feet
+quarts (liquid),57.75,cu inches
+quarts (liquid),0.000946,cu metres
+quarts (liquid),0.00124,cu yards
+quarts (liquid),0.25,gallons
+quarts (liquid),0.9463,litres
+quintal,100,kilogram
+rad (ionising radiation),0.01,gray (Gy)(joule/kg)
+radians,57.29578,degrees
+radians,3438,minutes
+radians,206000,seconds
+radians/sec,57.29578,degrees/sec
+radians/sec,9.549,revolutions/min
+radians/sec,0.1592,revolutions/sec
+radians/sec/sec,572.9578,revs./min/min
+radians/sec/sec,9.549,revs./min/sec
+radians/sec/sec,0.1592,revs./sec/sec
+réaumur,1.25,celsius (oC)
+register ton (shipping),2.831685,cu. metre
+rem,0.01,sievert (Sv)
+revolutions,360,degrees
+revolutions,4,quadrants
+revolutions,6.283185,radians
+revolutions/min (rpm),6,degrees/sec
+revolutions/min,0.1047198,radians/sec
+revolutions/min,0.01667,revs./sec
+revolutions/min/min,0.00175,radians/sec/sec
+revolutions/min/min,0.01667,revs/min/min
+revolutions/min/min,0.000278,revs/sec/sec
+revolutions/sec,360,degrees/sec
+revolutions/sec,6.283,radians/sec
+revolutions/sec,60,revs/min
+revolutions/sec/sec,6.283,radians/sec/sec
+revolutions/sec/sec,3600,revs/min/min
+revolutions/sec/sec,60,revs/min/sec
+rhe,10,per pascal sec
+rod,0.25,chain (Gunter's)
+rod,5.02921,metres
+rods (surveyor's meas.),5.5,yards
+rods,16.5,feet
+rontgen,0.000258,coulomb per kilogram
+rood (UK),1011.715,sq. metre
+scruples ( see medical page ),20,grains
+seconds (angle),0.000278,degrees
+seconds (angle),0.01666667,minutes
+seconds (angle),3.09E-06,quadrants
+seconds (angle),4.848137E-06,radians
+seconds (sidereal) (more time),0.9972696,seconds (s)
+self tapping fastening,see table,metric self tapper
+shake,10,nanoseconds (ns)
+"shoe size (men, women)",see tables,cm
+slug,14.5939,kilogram
+slug,32.17,pounds
+slug per cubic foot,515.3788,kg per cubic metre
+slug per foot second,47.88026,pascal second
+span,9,inch
+spanner size,see table,metric thread
+sphere,12.57,steradians
+spoon measures,see tables,kitchen data
+square centimetres,197000,circular mils
+square centimetres,0.00108,square feet
+square centimetres,0.155,square inches
+square centimetres,0.0001,square metres
+square centimetres,3.86E-11,sq miles
+square centimetres,100,sq millimetres
+square centimetres,0.00012,sq yards
+square feet,2.3E-05,acres
+square feet,183000000,circular mils
+square feet,929,sq cms
+square feet,144,sq inches
+square feet,0.09290304,sq meters
+square feet,3.59E-08,sq miles
+square feet,92900,sq millimeters
+square feet,0.1111,sq yards
+square feet per hour,2.58064E-05,sq m. / second
+square feet per second,0.09290304,sq m. / second
+square inches,1270000,circular mils
+square inches,6.452,sq cm
+square inches,0.00694,sq feet
+square inches,645.2,sq millimetres
+square inches,1000000,sq mils
+square inches,0.000772,sq yards
+square kilometres,247.1,acres
+square kilometres,10000000000,sq cms
+square kilometres,10800000,sq ft
+square kilometres,1550000000,sq inches
+square kilometres,1000000,sq metres
+square kilometres,0.3861,sq miles
+square kilometres,1200000,sq yards
+square metres,0.000247,acres
+square metres,10000,sq cm
+square metres,10.763915,sq feet
+square metres,1550,sq inches
+square metres,3.86E-07,sq miles
+square metres,1000000,sq millimetres
+square metres,1.196,sq yards
+square miles,640,acres
+square miles,27900000,sq feet
+square miles,2.589988,sq kms
+square miles,2589988,sq metres
+square miles,3100000,sq yards
+square millimetres,1973,circular mils
+square millimetres,0.01,sq cms
+square millimetres,1.08E-05,sq feet
+square millimetres,0.00155,sq inches
+square mils,1.273,circular mils
+square mils,6.45E-06,sq cms
+square mils,1E-06,sq inches
+square yards,0.000207,acres
+square yards,8361,sq cms
+square yards,9,sq feet
+square yards,1296,sq inches
+square yards,0.8361274,sq meters
+square yards,3.23E-07,sq miles
+square yards,836000,sq millimeters
+standard wire gauge [swg],see table,american [awg]
+statampere,3.335641E-10,ampere
+statcoulomb,3.335641E-10,coulomb
+statfarad,1.112649E-12,farad
+stathenry,898755431000,henry
+statmho,1.112649E-12,siemens (S)
+statohm,898755431000,ohm
+statvolt,299.7925,volt
+steam tables,see tables,Btu/lb and kJ/kg
+stere,1,cu. metre
+sthene,1000,newton
+stilb,10000,candela per sq. metre
+stokes,0.0001,metre sq. per sec
+stone (British) ( medical ),14,pound (avoirdupois)
+stone (British),6.3502936,kilograms
+tablespoons (UK & metric),15,millilitre
+tablespoons (US),14.78676,millilitre
+tap (thread),see table,pilot drill size
+teaspoons (UK & metric),5,millilitre ( = cu.cm = cc)
+teaspoons (US),4.928922,cubic cm ( = cc )
+teaspoon + other spoons,see table,kitchen data or medical
+tex (thread),see table,grams per 1000 metre
+time units,see table,seconds to years
+therm (European),105506000,joule
+therm (US),105480400,joule
+thermie,4185500,joule
+thou (mil),2.54E-05,metre
+thread (bolt),see table,spanner size
+tons (long),1016.047,kilograms
+tons (long),2240,pounds
+tons (long),1.12,tons (short)
+tons (tonne)(metric),1000,kilograms
+tons (metric),2205,pounds
+tons (short),32000,ounces
+tons (short),907.1847,kilograms
+tons (short),2000,pounds
+tons (short),2430.56,pounds (troy)
+tons (short),0.89287,tons (long)
+tons (short),0.9071847,tonnes (metric)
+tons (short)/sq.ft.,9765,kgs/sq meter
+tons (short)/sq.ft.,2000,pounds/sq in
+tons of water/24 hrs,83.333,pounds of water/hr
+tons of water/24 hrs,0.16643,gallons/min
+tons of water/24 hrs,1.3349,cu ft/hr
+tons refrigeration,12000,btu per hour
+tons refrigeration,3024.117,kilocalorie per hour
+tons refrigeration,3517.2,watts
+torr,133.32237,pascal
+unit pole,1.256637E-07,weber ( Wb )
+volt inch,0.3937,volt/cm
+volt (absolute),0.003336,statvolts
+watts,3.4129,Btu/hr
+watts,0.05688,Btu/min
+watts,10000000,erg/sec
+watts,44.27,foot-lbs/min
+watts,0.7378,foot-lbs/sec
+watts,0.00134,horsepower
+watts,0.00136,horsepower (metric)
+watts,0.01433,kg-calories/min
+watts,0.001,kilowatts
+watts,0.0002843,tons refrigeration
+watts ( see details ),watts/volts,amps
+watts (absolute),0.056884,Btu (mean)/min
+watts (absolute),1,joules/sec
+watt hour,3600,joule
+watt-hours,3.413,Btu
+watt-hours,36000000000,ergs
+watt-hours,2656,foot-pounds
+watt-hours,859.85,gram-calories
+watt-hours,0.00134,horsepower-hrs
+watt-hours,0.8605,kilogram-calories
+watt-hours,367.2,kiloram-metres
+watt-hours,0.001,kilowatt-hrs
+watt (international),1.0002,watt (absolute)
+webers,100000000,maxwells
+webers,100000,kilolines
+webers/sq in,15500000,gausses
+webers/sq in,100000000,lines/sq in
+webers/sq in,0.155,webers/sq cm
+webers/sq in,1550,webers/sq meter
+webers/sq metre,10000,gausses
+webers/sq metre,64500,lines/sq in
+webers/sq meter,0.0001,webers/sq cm
+webers/sq metre,0.000645,webers/sq in
+week,7,day
+week,168,hour
+week,10080,minute (time)
+week,0.2299795,month
+week,605000,second
+yards,91.44,centimeters
+yards,0.5,fathom
+yards,3,foot
+yards,36,inches
+yards,0.000914,kilometers
+yards,0.9144,metres
+yards,0.000493,miles (nautical)
+yards,0.000568,miles (statute)
+yards,914.4,millimeters
+year (mean of 4 year period),365.25,day ( more on time )
+year (mean of 4 year period),8766,hour
+year (mean of 4 year period),526000,minute (time)
+year (mean of 4 year period),31558150,second (time)
+year (mean of 4 year period),52.17857,week
