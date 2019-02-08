@@ -21,13 +21,13 @@
 use std::collections::HashMap;
 
 /// Table contains all of our unit conversions within the field `convert`
-#[derive(Hash,Debug)]
+#[derive(Debug)]
 pub struct Table {
     /// Convert is the 'meat' of our conversion table. It accepts a tuple of
     /// string slices as a key and returns a conversion factor. This should
     /// *feel* the same as having a generic function that knows how to convert
     /// between units.
-    convert: HashMap,
+    convert: HashMap<(&'static str,&'static str),f32>,
 }
 
 impl Table {
@@ -35,11 +35,15 @@ impl Table {
     /// `convert` which is our HashMap. The hashmap and all the conversions
     /// are generated when this is done.
     pub fn new() -> Table {
-        let factors = HashMap::new();
+        let mut factors = HashMap::new();
         // This is going to take a while
         factors.insert(("square foot","square meter"),0.0929);
         factors.insert(("cubic foot","cubic meter"),0.2831);
         factors.insert(("pound per square inch", "kilopascal"),6.894);
+        factors.insert(("pound force","newton"),4.448);
+        factors.insert(("foot pound","newton meter"),1.356);
+        factors.insert(("gallon per minute","liter per second"),0.06309);
+        factors.insert(("kip per square inch","megapascal"),6.89);
         // Return our table struct with convert defined by our hashmap
         Table {
             convert:factors
