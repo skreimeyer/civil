@@ -1,9 +1,13 @@
 [package]
 name = "civil"
 description="a library to support civil engineering applications"
+keywords=["civil-engineering", "engineering-library", "civil"]
+categories=["science"]
 version = "0.0.3"
 authors = ["Sam Kreimeyer"]
 edition = "2018"
-license = "GPL-3.0+"
+license = "MIT"
+
+[badges]
 
 [dependencies]

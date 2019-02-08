@@ -1,0 +1,25 @@
+language: rust
+sudo: true # Required for functional IPv6 (forces VM instead of Docker).
+dist: xenial
+rust:
+  - stable
+  - nightly
+  - beta
+matrix:
+  allow_failures:
+    rust: nightly
+  fast_finish: true
+
+cache: cargo
+
+before_script:
+  # Add an IPv6 config - see the corresponding Travis issue
+  # https://github.com/travis-ci/travis-ci/issues/8361
+  - if [ "${TRAVIS_OS_NAME}" == "linux" ]; then
+      sudo sh -c 'echo 0 > /proc/sys/net/ipv6/conf/all/disable_ipv6';
+    fi
+
+script:
+  - cargo build --verbose --all
+  - cargo test --verbose --all
+  - 'if [ $TRAVIS_RUST_VERSION = nightly ]; then for f in ./benches/*.rs; do cargo test --bench $(basename $f .rs) $FEATURES; done; fi'
