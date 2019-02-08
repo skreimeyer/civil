@@ -1,4 +1,4 @@
 #[test]
-fn test_works {
+fn we_can_test() {
     assert!(true)
 }
