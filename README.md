@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.org/skreimeyer/civil.svg?branch=master)](https://travis-ci.org/skreimeyer/civil)
-[codecov](https://codecov.io/gh/skreimeyer/civil/branch/master/graph/badge.svg)](https://codecov.io/gh/skreimeyer/civil)"
+[![codecov](https://codecov.io/gh/skreimeyer/civil/branch/master/graph/badge.svg)](https://codecov.io/gh/skreimeyer/civil)"
 
 # Civil
 
