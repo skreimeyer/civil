@@ -1,0 +1,1099 @@
+abampere,10,ampere (A)
+abcoulomb,10,coulomb (C)
+abfarad,1000000000,farad (F)
+abhenry,1E-09,henry (H)
+abmho,1000000000,siemen (S)
+abohm,1E-09,ohm ()
+abvolt,1E-08,volt (V)
+"acceleration, standard",9.80665,m per sec squared
+"acceleration, standard",32,foot . per sec per sec (foot per s²)
+acre,10,square . chainch (Gunter's)
+acre,160,square . rod 
+acre,100000,square . link (Gunter's)
+acre,0.4047,hectare
+acre ,43560,square . foot
+acre ,4046.873,square . meter 
+acre ,0.001562,square . mile 
+acre ,4840,square . yard 
+acre-foot,43560,cubic . foot
+acre-foot,325900,gallon 
+acre-foot,1233.489,cubic meter (m³)
+ampere-hour ,3600,coulomb (C)
+ampere-hour ,0.03731,faraday 
+ampere-turn ,1.257,gilbert 
+amp (watt = amp x volts),amp x volt,watt (see details)
+angstrom unit,3.94E-06,inch
+angstrom unit,1E-10,meter
+angstrom unit,0.0001,micron
+are,100,square meter
+astromical unit,1.495 979E+08,kilometer 
+atmosphere ,0.007348,ton per square . inch
+atmosphere ,76,centimeter of mercury
+atmosphere ,33.9,foot . of water(at 4°C)
+atmosphere ,406.8,inch . of water(at 4°C)
+atmosphere ,29.92,inch . of mercury (0°C)
+atmosphere ,101.325,kilo Pascal
+atmosphere ,1.0333,kilogram per square . centimeter 
+atmosphere ,10332,kilogram per square . meter
+atmosphere ,14.7,pound per square . inch 
+atmosphere ,1.058,ton per square . foot 
+barn,1E-28,square meter
+barrel (US dry),7056,cubic . inch
+barrel (US dry),105,quart (dry)
+"barrel (US, liquid)",31.5,gallon 
+barrel (oil),158.9873,litre (L or l)
+barrel (oil),42,gallon (oil)
+bar ,0.9869,atmosphere 
+bar ,1000000,dyne per square . centimeter 
+bar ,10200,kilogram per square . meter
+bar ,100000,pascal
+bar ,100,kilopascal (kPa)
+bar ,2089,pound per square . foot 
+bar ,14.5,pound per square . inch 
+biot,10,ampere (A)
+bolt (US cloth),36.576,meter 
+Btu [more Btu convert here],10600000000,erg 
+Btu (39 deg.F),1059.67,joule (J)
+Btu per hr (international table),0.2930711,watt 
+bucket (Brit. dry),18180,cubic centimeter 
+bushel (UK),0.03636872,cubic . meter 
+bushel (USA),0.03523907,cubic . meter 
+bushel ,1.2445,cubic . foot 
+bushel ,2150.4,cubic . inch 
+bushel ,35.24,litre 
+bushel ,4,peck 
+bushel ,64,pint (dry)
+bushel ,32,quart (dry)
+cable,0.1,mile (nautical)
+cable,185.3,meter ( m )
+caliber,0.01,inch ( inch )
+caliber,0.254,millimeter ( mm )
+"calorie, gram (mean)",0.00396832,Btu (mean)
+calorie,1.56E-06,horsepower-hour
+calorie,1.58E-06,horsepower-hour (metric)
+calorie (international table),4.1868,joule ( J )
+calorie (thermochemical),4.184,joule
+calorie (15 degree C),4.1855,joule
+calorie (20 degree C),4.1819,joule
+calorie (mean),4.19002,joule
+calorie (int) per hr,0.001163,watt ( W )
+calorie (thermo) per square . centimeter . minch ,697.3333,watt per square . meter
+calorie,1.16E-06,kilowatt-hour ( kWhr )
+candela per square inch,1550.003,candela per square . meter
+candle per square . centimeter ,3.142,lambert 
+candle per square . inch,0.487,lambert 
+carat (metric),0.2,gram ( g )
+celsiu (degree C),1.8 + 32,degree Fahrenheit
+centare (centiares),1,square . meter 
+centigram ,0.01,gram 
+centilitre,0.3382,ounce fluid (US)
+centilitre,0.6103,cubic inch
+centilitre,2.705,dram 
+centilitre ,0.01,litre ( liter )
+centimeter ,0.03281,foot ( foot )
+centimeter ( centimeter ),0.3937,inch
+centimeter ,1E-05,kilometer 
+centimeter ,0.01,meter 
+centimeter ,6.21E-06,mile 
+centimeter ,10,millimeter 
+centimeter ,393.7,mil 
+centimeter ,0.01094,yard ( yd )
+centimeters-dyne ,0.00102,centimeter -gram 
+centimeter-dyne ,1.02E-08,meter-kilogram s
+centimeter-dyne ,7.38E-08,pound-foot
+centimeter-gram ,980.7,centimeter -dyne 
+centimeter-gram ,1E-05,meter-kilogram s
+centimeter-gram ,0.07233,pound-foot
+centimeter of mercury (0degC),1333.2239,pascal
+centimeter of mercury,0.01316,atmosphere 
+centimeter of mercury,0.4461,foot of water
+centimeter of mercury,136,kilogram per square . meter
+centimeter of mercury,27.85,pound per square . foot 
+centimeter of mercury,0.1934,pound per square . inch ( psi )
+centimeter of water (4 deg.C),98.0638,pascal
+centimeter of water (conventional),98.0665,pascal
+centimeter per sec,1.1969,foot per minch 
+centimeter per sec,0.03281,foot per sec
+centimeter per sec,0.036,kilometer per hr
+centimeter per sec,0.1943,knot 
+centimeter per sec,0.6,meter per minch 
+centimeter per sec,0.02237,mile per hr
+centimeter per sec,0.0003728,mile per minch 
+centimeter per sec per sec,0.03281,foot per sec per sec
+centimeter per sec per sec,0.036,kilometer per hr per sec
+centimeter per sec per sec,0.01,meter per sec per sec
+centimeter per sec per sec,0.02237,mile per hr per sec
+centipoise,0.001,pascal second (Pa-s)
+centistoke ,1E-06,meter square . per second
+cfm (cubic foot per minch ),472,cubic . centimeter per sec
+chainch ,792,inch
+chainch (engineer or Ramden's),30.48,meter 
+chainch (surveyor's or Gunter's),20.12,meter 
+chainch (US survey foot),20.11684,meter 
+chainch (surveyor's or Gunter's),22,yard 
+cheval vapeur (metric hp),735.499,watt
+circular mil ,5.07E-06,square . centimeter 
+circular mil ,0.7854,square . mil 
+circular mil ,7.85E-07,square . inch
+circumference ( circ ),6.283,radian 
+clo,0.2003712,kelvinch square . meter per watt
+clo (alternative info source),0.155,kelvinch square . meter per watt
+clusec,1.333224E-06,pascal cubic . meter per sec.
+cord ,8,cord foot
+cord ,3.624556,cubic meter 
+cord foot,16,cubic . foot
+coulomb,3000000000,statcoulomb 
+coulomb ,1.04E-05,faraday 
+coulomb per square . centimeter ,64.52,coulomb per square . inch 
+coulomb per square . centimeter ,10000,coulomb per square . meter
+coulomb per square . inch ,0.155,coulomb per square . centimeter 
+coulomb per square . inch ,1550,coulomb per square . meter
+coulomb per square . meter,0.0001,coulomb per square . centimeter 
+coulomb per square . meter,0.0006452,coulomb per square . inch 
+cubic centimeter ( cubic .centimeter . ),3.53E-05,cubic . foot
+cubic centimeter,0.06102374,cubic . inch
+cubic centimeter,1E-06,cubic . meter
+cubic centimeter,1000,cubic . millimeter
+cubic centimeter,1.31E-06,cubic . yard
+cubic centimeter,0.2815606,drachm (Brit. fluid)
+cubic centimeter,0.2705122,dram (U.S. fluid)
+cubic centimeter,0.00022,gallon (Brit liq.)
+cubic centimeter,0.000264,gallon (US liq.)
+cubic centimeter ( cc ),0.001,litre ( to hp )
+cubic centimeter,0.002113,pint (US liq.)
+cubic centimeter,0.001057,quart (US liq.)
+cubic foot ( cubic .foot . ),0.8036,bushel (dry)
+cubic foot ( ft3 ),28320,cubic . centimeter 
+cubic foot ( foot ^3 ),1728,cubic . inch
+cubic foot,0.02831685,cubic . meter 
+cubic foot,0.037037037,cubic . yard 
+cubic foot,7.48052,gallon (US liq.)
+cubic foot,28.32,litre 
+cubic foot,59.84,pint (US liq.)
+cubic foot,29.92,quart (US liq)
+cubic foot per minch ( cfm ),472,cubic . centimeter per sec
+cubic foot per minch ( ft3 per minch ),0.1247,gallon per sec
+cubic foot per minch ,0.4719474,litre per sec
+cubic foot per minch ,62.43,pound of water per minch 
+cubic foot per sec,0.646317,million gals. per day
+cubic foot per sec,448.831,gallon per minch 
+cubic inch ( cubic .inch . ),16.387,cubic . centimeter ( cc ) ( to hp)
+cubic inch,0.0005787,cubic . foot
+cubic inch,1.6387064E-05,cubic . meter 
+cubic inch,2.14E-05,cubic yard 
+cubic inch,0.004329,gallon 
+cubic inch,106100,mil-foot
+cubic inch,0.03463,pint (US liq.)
+cubic inch,0.01732,quart (US liq.)
+cubic inch per minute,2.731177E-07,cubic . meter per second
+cubic meter ( cubic .m. ),28.38,bushel (dry)
+cubic meter ,1000000,cubic centimeter 
+cubic meter ,35.31,cubic foot
+cubic meter ,61023,cubic inch
+cubic meter ,1.307951,cubic yard 
+cubic meter ,264.2,gallon (US liq.)
+cubic meter ,1000,litre 
+cubic meter ,2113,pint (US liq.)
+cubic meter ,1057,quart (US liq.)
+cubic mile ,4168182000,cubic meter 
+cubic yard ( cubic .yd. ),764600,cubic cm 
+cubic yard ( yd3 ),27,cubic foot
+cubic yard ,46656,cubic inch
+cubic yard ,0.7645549,cubic meter 
+cubic yard ,202,gallon (US liq.)
+cubic yard ,764.6,litre 
+cubic yard ,1615.9,pint (US liq.)
+cubic yard ,807.9,quart (US liq.)
+cubic yard per minch ,0.45,cubic foot per sec
+cubic yard per minch ,3.367,gallon per sec
+cubic yard per minch ,12.74,litre per sec
+cubic yard per minch ,0.01274258,cubic meter per sec
+cup (USA),236.5882,cubic centimeter 
+cup (UK),0.0002841306,cubic . meter
+curie (Ci),37000000000,becquerel (Bq)
+cusec hour,101.9407,cubic . meter
+darcy,9.869233E-13,square meter 
+day (mean solar),86400,second 
+day (sidereal) (more on time),86164.09,second 
+debye,3.335641E-30,coulomb meter
+decigram ,0.1,gram 
+decilitre ,0.1,litre 
+decimeter ,0.1,meter 
+degree Fahrenheit,-32 x 0.55555,degree Celsiu 
+degree (angle),0.01111,quadrant 
+degree (angle),0.01745329,radian 
+degree (angle),3600,second 
+degree per sec,0.01745,radian per sec
+degree per sec,0.1667,revolution per minch 
+degree per sec,0.002778,revolution per sec
+dekagram ,10,gram 
+dekalitre ,10,litre 
+dekameter ,10,meter 
+denier,0.0001111111,gram per meter
+denier,1,gram per 9000 meter
+dioptre,1,per meter
+drachm (fluid) (UK) ( medical ),0.003551633,cubic . meter
+drams(apoth. or troy),0.1371429,ounces(avoirdupois)
+drams(apoth. or troy),0.125,ounce (troy)
+drams(US fluid or apoth.),3.6967,cubic centimeter 
+dram ,27.3437,grain 
+dram ,1.7718,gram 
+dram ,0.0625,ounce 
+drop (also see kitchen),0.01666,teaspoon US
+dyne per centimeter ,0.01,erg per square . millimeter
+dyne per square . centimeter ,9.87E-07,atmosphere 
+dyne per square . centimeter ,2.95E-05,inch of mercury at 0°C
+dyne per square . centimeter ,0.0004015,inch of water at 4°C
+dyne ,0.00102,gram 
+dyne ,1E-07,joule per centimeter 
+dyne ,1E-05,joule per meter (newtons)
+dyne ,1.02E-06,kilogram 
+dyne ,7.23E-05,poundal 
+dyne ,2.25E-06,pound 
+dyne centimeter ,1E-07,newton meter
+dyne per square . centimeter ,0.1,pascal (Pa)
+dyne per square . centimeter ,1E-06,bar 
+electromagnetic unit of capacitance,1000000000,farad (F)
+electromagnetic unit of charge,10,coulomb (C)
+electromagnetic unit of current,10,ampere (A)
+electromagnetic unit of inductance,1E-09,henry (H)
+electromagnetic unit of potential,1E-08,volt (V)
+electromagnetic unit of resistance,1E-09,ohm ()
+electronvolt,1.6021917E-19,joule (J)
+electrostatic unit of capacitance,1.112649E-12,farad
+electrostatic unit of charge (franklinch ),3.33564E-10,coulomb
+electrostatic unit of current,3.33564E-10,ampere
+electrostatic unit of inductance,898755431000,henry
+electrostatic unit of potential,299.7925,volt
+electrostatic unit of resistance,898755431000,ohm
+ell,114.3,centimeter 
+ell,45,inch
+em (pica),0.167,inch
+em (pica),0.4233,centimeter 
+erg per sec,1,dyne-centimeter per sec
+erg ,9.48E-11,Btu
+erg ,1,dyne-centimeter 
+erg ,7.37E-08,foot-pound 
+erg ,2.39E-08,gram-calorie 
+erg ,0.00102,grams-centimeter 
+erg ,3.73E-14,horsepower-hour
+erg ,1E-07,joule 
+erg ,2.39E-11,kilogram -calorie 
+erg ,1.02E-08,kilogram -meter 
+erg ,2.78E-14,kilowatt-hour
+erg ,2.78E-11,watt-hour
+erg per sec,5.69E-06,Btu per minch 
+erg per sec,4.43E-06,foot -lb per minch 
+erg per sec,7.38E-08,foot -lb per sec
+erg per sec,1.34E-10,horsepower
+erg per sec,1.43E-09,kilogram -calorie per minch 
+erg per sec,1E-07,watt 
+fahrenheit (°F),-32 x 0.55555,celsiu (°C)
+farad ,1E-06,microfarad 
+farad (international of 1948),0.999505,farad
+faraday per sec,96500,ampere (absolute)
+faraday ,26.8,ampere-hour 
+faraday (based on carbon- 12),96485.31,coulomb
+faraday (chemical),96495.7,coulomb per mole
+faraday (physical),96521.9,coulomb per mole
+fathom ,1.828804,meter
+fathom ,6,foot
+fathom ,15,shackle
+foot (foot .),30.48,centimeter 
+foot,0.0003048,kilometer 
+"foot, inch, fractions",calculator here,"meter , centimeter , mm"
+foot (English Imperial),0.3048,meter 
+foot (US survey),0.3048006,meter 
+foot (Cape),0.3148581,meter 
+foot (geodetic Cape),0.314855575,meter 
+foot,0.0001645,mile (naut.)
+foot,0.0001894,mile (stat.)
+foot,304.8,millimeter 
+foot,12000,mil 
+foot of water,0.0295,amosphere 
+foot of water,0.8826,inch . of mercury
+foot of water,0.03048,kilogram per square . centimeter 
+foot of water,304.8,kilogram per square . meter
+foot of water,62.43,pound per square . foot 
+foot of water,0.4335,pound per square . inch 
+foot per minch (fpm),0.508,cm per sec
+foot per minch ,0.01667,foot per sec
+foot per minch ,0.01829,km per hr
+foot per minch ,0.3048,meter per minch 
+foot per minch ,0.01136,mile per hr
+foot per sec,30.48,cm per sec
+foot per sec,1.097,km per hr
+foot per sec,0.5921,knot 
+foot per sec,18.29,meter per minch 
+foot per sec,0.6818,mile per hr
+foot per sec,0.01136,mile per minch 
+foot per sec per sec,30.48,cm per sec per sec
+foot per sec per sec,1.097,km per hr per sec
+foot per sec per sec,0.3048,meter per sec per sec
+foot per sec per sec,0.6818,mile per hr per sec
+foot per 100 foot,1,percent grade
+fermi,1E-15,meter
+foot (foot . - singular of foot),0.3048,meter
+foot (Cape),0.3148581,meter
+foot (geodetic Cape),0.314855575,meter
+foot (South African geodetic),0.304797265,meter
+foot-candle,10.76391,lumen per square . meter
+foot lambert,3.426259,candela per square . meter
+foot-pound ,0.001286,Btu
+foot-pound ,13600000,erg 
+foot-pound ,0.3238,gram-calorie 
+foot-pound ,5.05E-07,hp-hour
+foot-pound ,1.355818,joule 
+foot-pound ,0.000324,kilogram -calorie 
+foot-pound ,0.1383,kilogram -meter 
+foot-pound ,3.77E-07,kilowatt-hour
+foot-pound per minch ,0.001286,Btu per minch 
+foot-pound per minch ,0.01667,foot-pound per sec
+foot-pound per minch ,3.03E-05,horsepower
+foot-pound per minch ,0.000324,kilogram -calorie per minch 
+foot-pound per minch ,0.0226,watt 
+foot-pound per sec,4.6263,Btu per hr
+foot-pound per sec,0.07717,Btu per minch 
+foot-pound per sec,0.000818,horsepower
+foot-pound per sec,1.01945,kilogram -calorie per minch 
+foot-pound per sec,1.355818,watt 
+footE+04 (second moment of area),0.008630975,meter to the fourth power
+franklinch (Fr),3.3356641E-10,coulomb (C)
+frigorie,1.162639,watt
+furlong ,0.125,mile (US)
+furlong ,40,rod 
+furlong ,660,foot
+foot ,1,foot or foot
+gal,0.01,meter per sec square .
+gallon (Imperial),0.00454609,cubic meter 
+gallon (Imperial),4.54609,litre 
+gallon (US),3785.412,cubic centimeter (cc)
+gallon (US),0.1337,cubic foot
+gallon (US),231,cubic . inch
+gallon (US),0.003785,cubic . meter 
+gallon (US),0.004951,cubic . yard 
+gallon (US),3.785412,litre 
+gallon (liq. British imp.),1.20094,gallon (US liq.)
+gallon (US),0.83267,gallon (imp.)
+gallon (US) of water,8.3453,pound of water
+gallon (Imperial) of water,10,pound of water
+gallons(US) per minch ,0.002228,cubic . foot per sec
+gallons(US) per minch ,0.0630902,litre per sec
+gallons(Imperial) per minch ,0.07577,litre per sec
+gallons(US) per minch ,8.0208,cubic . foot per hr
+gamma (magnetic induction),1E-09,tesla ( T )
+gamma (mass),1E-09,kilogram
+gaus ,0.0001,tesla
+gaus ,6.452,line per square . inch
+gaus ,1E-08,weber per square . centimeter 
+gaus ,6.45E-08,weber per square . inch
+gaus ,0.0001,weber per square . meter
+gilbert ,0.7957747,ampere-turn 
+gilbert per centimeter ,0.7958,amp-turn per centimeter 
+gilbert per centimeter ,2.021,amp-turn per inch 
+gilbert per centimeter ,79.581,amp-turn per meter
+gill (British),142.0653,cubic centimeter 
+gill (US),0.1183,litre 
+gill (US),0.25,pint (liq.)
+gon or grade,0.01570796,radian (pi per 200)
+grain ( see medical page ),0.03657143,dram (avoirdupois)
+grain (troy),1,grain (avoirdupois)
+grain (troy),0.06479891,gram 
+grain (troy),0.0020833,ounce (avoirdupois)
+grain (troy),0.04167,pennyweight (troy)
+grain per US gallon,17.118,part per million
+grain per Imperial gallon,14.2538,part per million
+grain per US gallon,142.86,pound per million
+grain per imp. gallon,14.286,gal part per million
+gram ,5,carat (metric)
+gram ,0.56438339,dram
+gram ,980.7,dyne 
+gram ,15.43,grain 
+gram ,9.81E-05,joule per centimeter 
+gram ,0.00981,joule per meter (newtons)
+gram ,0.001,kilogram 
+gram ,1000,milligram 
+gram ,0.035273962,ounces(avoirdupois)
+gram ,0.032150747,ounce (troy)
+gram ,0.07093,poundal 
+gram ,0.002204623,pound 
+gram per centimeter ,0.0056,pound per inch
+gram per cubic . centimeter ,62.43,pound per cubic . foot 
+gram per cubic . centimeter ,0.03613,pound per cubic . inch 
+gram per cubic . centimeter ,3.41E-07,pound per mil-foot
+gram per litre,58.417,grain per gal (US)
+gram per litre,8.345,pound per 1000 gal
+gram per litre,0.062427,pound per cubic . foot 
+gram per litre,1000,part per million
+gram per square . centimeter ,2.0481,pound per square . foot 
+gram force per square .centimeter ,98.0665,pascal
+gram-calorie ,0.0039683,Btu
+gram-calorie ,4.19E-07,erg 
+gram-calorie ,3.088,foot-pound 
+gram-calorie ,1.56E-06,horsepower-hour
+gram-calorie ,1.16E-06,kilowatt-hour
+gram-calorie ,0.001163,watt-hour
+gram-calorie per sec,14.286,Btu per hr
+gram-calorie ,9.3E-08,Btu
+gram-centimeter ,980.7,erg 
+gram-centimeter ,980700,joule 
+gram-centimeter ,234000000,kilogram -cal
+gram-centimeter ,100000,kilogram -meter 
+hand,10.16,centimeter 
+hectare (10000 square .m),2.471,acre 
+hectare ,107600,square . foot
+hectogram ,100,gram 
+hectolitre ,100,litre 
+hectometer ,100,meter 
+hectowatt ,100,watt 
+henrie ,1000,millihenrie 
+hogshead (British),10.114,cubic foot
+hogshead (U.S.),8.42184,cubic foot
+hogshead (U.S.),63,gallon (U.S.)
+horsepower,42.44,Btu per minch 
+horsepower,33000,foot-lb per minch 
+horsepower,550,foot-lb per sec
+horsepower (metric),0.9863,horsepower
+horsepower,10.68,kilogram -calorie per minch 
+horsepower,0.7457,kilowatt 
+horsepower (boiler),33479,Btu per hr
+horsepower (boiler),9809.5,watt 
+horsepower (metric),735.4988,watt 
+horsepower (electric),746,watt 
+horsepower (UK),745.7,watt 
+horsepower (water),746.043,watt 
+horsepower-hour,2547,Btu
+horsepower-hour,26800000000000,erg 
+horsepower-hour,1980000,foot-lb 
+horsepower-hour,641190,gram-calorie 
+horsepower-hour,2684000,joule 
+horsepower-hour,641.1,kilogram -calorie 
+horsepower-hour,273700,kilogram -meter 
+horsepower-hour,0.7457,kilowatt-hour
+hour (mean solar),0.04166667,day (more on time)
+hour (mean solar),0.005952381,week 
+hundredweight (cwt) (long),112,pound (lbs)
+hundredweight (long),0.05,ton (long)
+hundredweight (short),1600,ounce (avoirdupois)
+hundredweight (short),100,pound (lbs)
+hundredweight (short),0.0453592,tonne (metric)
+hundredweight (short),0.0446429,ton (long)
+imperial measurement ,see page,"time, money, unit , etc."
+"inch, inch , ins. and fractions",convert here,"meter , centimeter , mm"
+inch,2.54,centimeter 
+inch,0.08333333,foot
+inch,0.0254,meter 
+inch,1.578E-05,mile 
+inch,25.4,millimeter 
+inch,1000,mil 
+inch,0.027777778,yard 
+inch of mercury (at 32deg.F),3386.389,pascal
+inch of mercury,0.03342,atmosphere 
+inch of mercury,1.133,foot of water
+inch of mercury,0.03453,kilogram per square . centimeter 
+inch of mercury,345.3,kilogram per square . meter
+inch of mercury,70.73,pound per square . foot .
+inch of mercury,0.4912,pound per square . inch .
+inch of water (at 4ºC),0.002458,atmosphere 
+inch of water (at 4ºC),0.07355,inch of mercury
+inch of water (at 4ºC),0.00254,kilogram per square . centimeter 
+inch of water (at 4ºC),0.5781,ounce per square . inch 
+inch of water (at 4ºC),5.204,pound per square . foot 
+inch of water (at 4ºC),0.03613,pound per square . inch 
+international ampere,0.9998,ampere (absolute)
+international volt,1.59E-19,joule (absolute)
+international volt,96540,joule 
+iron (shoes),0.00053,meter
+joule ,0.000948,Btu
+joule ,10000000,erg 
+joule ,0.7376,foot-pound 
+joule ,0.0002389,kilogram -calorie 
+joule ,0.102,kilogram -meter 
+joule ,0.0002778,watt-hour
+joule per centimeter ,10200,gram 
+joule per centimeter ,10000000,dyne 
+joule per centimeter ,100,joule per meter (newton)
+joule ,723.3,poundal 
+joule ,22.48,pound 
+"k , k's or klick (slang)",- see -,kilometer (kilometer )
+kayser,100,reciprocal meter
+kelvinch ,t per ºC=T per K-273.15,degree Celsiu 
+kilo (slang),- see -,kilogram 
+kilogram (kilogram ),980665,dyne 
+kilogram ,1000,gram 
+kilogram ,0.09807,joule per centimeter 
+kilogram ,9.807,joule per meter (newtons)
+kilogram ,70.93,poundal 
+kilogram ,2.2046,pound 
+kilogram ,0.000984,ton (long)
+kilogram ,0.0011,ton (short)
+kilogram per cubic meter,0.001,gram per cubic centimeter 
+kilogram per cubic meter,0.06243,pound per cubic foot 
+kilogram per cubic meter,3.61E-05,pound per cubic inch 
+kilogram per cubic meter,3.41E-10,pound per mil-foot
+kilogram per meter,0.672,pound per foot 
+kilogram per square centimeter ,980665,dyne 
+kilogram per square centimeter ,0.9678,atmosphere 
+kilogram per square centimeter ,32.81,foot of water
+kilogram per square centimeter ,28.96,inch of mercury
+kilogram per square centimeter ,2048,pound per square foot 
+kilogram per square centimeter ,14.22,pound per square inch 
+kilogram per square meter,9.68E-05,atmosphere 
+kilogram per square meter,9.81E-05,bar 
+kilogram per cubic meter,0.00328,foot of water
+kilogram per cubic meter,0.0029,inch of mercury
+kilogram per cubic meter,0.2048,pound per square foot 
+kilogram per cubic meter,0.00142,pound per square inch 
+kilogram per square mm,1000000,kilogram per square meter
+kilogram-calorie ,3.968,Btu
+kilogram-calorie ,3088,foot-pound 
+kilogram-calorie ,0.00156,hp-hour
+kilogram-calorie ,4186,joule 
+kilogram-calorie ,426.9,kilogram -meter 
+kilogram-calorie ,4.186,kilojoule 
+kilogram-calorie ,0.00116,kilowatt-hour
+kilogram-meter ,0.00929,Btu
+kilogram-meter ,98000000,erg 
+kilogram-meter ,7.233,foot-pound 
+kilogram-meter ,9.804,joule 
+kilogram-meter ,0.00234,kilogram -calorie 
+kilogram-meter ,2.72E-06,kilowatt-hour
+kilogram-force meter ,9.80665,newton meter 
+kiloline ,1000,maxwell 
+kilolitre ,1000,litre 
+kilometer ,6.68E-09,astronomical unit
+kilometer ,100000,centimeter 
+kilometer ,3280.84,foot
+kilometer ,39400,inch
+kilometer ,1.06E-13,light year
+kilometer ,1000,meter 
+kilometer ,0.6214,mile 
+kilometer ,1000000,millimeter 
+kilometer ,1094,yard 
+kilometer per hr,27.78,cm per sec
+kilometer per hr,54.68,foot per minch 
+kilometer per hr,0.9113,foot per sec
+kilometer per hr,0.5396,knot 
+kilometer per hr,16.67,meter per minch 
+kilometer per hr,0.6214,mile per hr
+kilometer per hr per sec,27.78,cm per hr per sec
+kilometer per hr per sec,0.9113,foot per sec per sec
+kilometer per hr per sec,0.2778,meter per sec per sec
+kilometer per hr per sec,0.6214,mile per hr per sec
+kilopond (= kilogram force)(kp),9.80665,newton
+kilowatt ,56.92,Btu per minch 
+kilowatt ,44300,foot-lb per minch 
+kilowatt ,737.6,foot-lb per sec
+kilowatt ,1.341,horsepower
+kilowatt ,14.34,kilogram -calorie per minch 
+kilowatt ,1000,watt 
+kilowatt-hour,3413,Btu
+kilowatt-hour,36000000000000,erg 
+kilowatt-hour,2660000,foot-lb 
+kilowatt-hour,859850,gram-calorie 
+kilowatt-hour,1.341,horsepower-hour
+kilowatt-hour,3600590,joule 
+kilowatt-hour,860.5,kilogram -calorie 
+kilowatt-hour,367000,kilogram -meter 
+kilowatt-hour,3.53,lb of water evap. at 212ºF
+kilowatt-hour,22.75,lb of water ^ from 62º-212ºF
+kilowatt-hour,4448.222,newton
+knot ,6080,foot per hr
+knot ,1.8532,kilometer per hr
+knot ,1,nautical mile per hr
+knot ,1.151,statute mile per hr ( mph )
+knot ,2027,yard per hr
+knot ,1.689,foot per sec
+knot ,0.5144444,meter per second ( m per )
+lambda,1E-09,cubic . meter
+lambert,3183.099,candela per square . meter
+langley,41840,joule per square . meter
+"lb, lb (short for 'pounds')",0.4536,kilogram 
+league,3,mile (approx.)
+leaguer,0.5773534,cubic . meter
+light-year,63239.7,astronomical unit
+light-year,5900000000000,mile 
+light-year,9460730000000,kilometer 
+ligne (buttons),0.000635,meter
+line per square centimeter ,1,gausse 
+line per square inch ,0.155,gause 
+line per square inch ,1.55E-09,weber per square centimeter 
+line per square inch ,1E-08,weber per square inch 
+line per square inch ,1.55E-05,weber per square meter
+link (engineer's),12,inch
+link (surveyor's),7.92,inch
+litre ,0.02838,bushel (U.S. dry)
+litre ,1000,cubic centimeter 
+litre ,0.03531,cubic foot
+litre ,61.02,cubic inch
+litre ,0.001,cubic meter 
+litre ,0.00131,cubic yard 
+litre ,0.2642,gallon (U.S. liq.)
+litre ,2.113,pint (U.S. liq.)
+litre ,1.057,quart (U.S. liq.)
+litre per minch ,0.000589,cubic foot per sec
+litre per minch ,0.0044,gal per sec
+lumen (lm),0.07958,spherical candle power
+lumen,0.001496,watt
+lumen per square foot ,1,foot-candle 
+lumen per square foot ,10.76,lumen per square meter
+lumen per square foot ,10.76391,lux (lx)
+lusec,0.0001333224,pascal cubic . meter per sec.
+lux,0.0929,foot-candle 
+maxwell ,0.001,kiloline 
+maxwell ,1E-08,weber 
+megaline ,1000000,maxwell 
+megohm ,1000000000000,microhm 
+megohm ,1000000,ohm 
+meter ,100,centimeter 
+meter (calc to foot . & ins.),3.281,foot
+meter ,39.37,inch
+meter ,0.001,kilometer 
+meter ,0.00054,mile (nautical)
+meter ,0.000621,mile (statute)
+meter ,1000,millimeter 
+meter ,1.094,yard 
+meter per minch ,1.667,cm per sec
+meter per minch ,3.281,foot per minch 
+meter per minch ,0.05468,foot per sec
+meter per minch ,0.06,km per hr
+meter per minch ,0.03238,knot 
+meter per minch ,0.03728,mile per hr
+meter per sec,196.8,foot per minch 
+meter per sec,3.281,foot per sec
+meter per sec,3.6,kilometer per hr
+meter per sec,0.06,kilometer per minch 
+meter per sec,2.237,mile per hr
+meter per sec,0.03728,mile per minch 
+meter per sec per sec,100,cm per sec per sec
+meter per sec per sec,3.281,foot per sec per sec
+meter per sec per sec,3.6,km per hr per sec
+meter per sec per sec,2.237,mile per hr per sec
+meter-kilogram ,98100000,centimeter -dyne 
+meter-kilogram ,100000,centimeter -gram 
+meter-kilogram ,7.233,pound-foot
+microfarad,1E-06,farad 
+microgram (see medical page),1E-06,gram 
+microhm ,1E-12,megohm 
+microhm ,1E-06,ohm 
+microlitre ,1E-06,litre 
+micron ,1E-06,meter 
+mile (nautical),6080.27,foot
+mile (nautical),1.852,kilometer 
+mile (nautical),1852,meter 
+mile (nautical),1.1516,mile (statute)
+mile (nautical),2027,yard 
+mile (statute),161000,centimeter 
+mile (statute),5280,foot
+mile (statute),63400,inch
+mile (statute),1.609,kilometer 
+mile (statute),1609,meter 
+mile (statute),0.8684,mile (nautical)
+mile (statute),1760,yard 
+mile per hr,44.7,centimeter per sec
+mile per hr,88,foot per minch 
+mile per hr,1.467,foot per sec
+mile per hr,1.609344,km per hr
+mile per hr,0.02682,km per minch 
+mile per hr,0.8684,knot 
+mile per hr,26.82,meter per minch 
+mile per hr,0.1667,mile per minch 
+mile per hr per sec,44.7,cm per sec per sec
+mile per hr per sec,1.467,foot per sec per sec
+mile per hr per sec,1.609,km per hr per sec
+mile per hr per sec,0.447,meter per sec per sec
+mile per minch ,2682,cm per sec
+mile per minch ,88,foot per sec
+mile per minch ,1.609,km per minch 
+mile per minch ,0.8684,knot per minch 
+mile per minch ,60,mile per hr
+mil-foot,9.43E-06,cubic inch
+millier ,1000,kilogram 
+millmicron ,1E-09,meter 
+millibar ,100,pascal 
+millibar ,0.0295299,inch of mercury
+milligram ,0.01543236,grain 
+milligram ,0.001,gram 
+milligram per litre,1,part per million
+millihenrie ,0.001,henrie 
+millilitre ,0.001,litre 
+millimeter ,0.1,centimeter 
+millimeter ,0.00328,foot
+millimeter ,0.03937,inch
+millimeter ,1E-06,kilometer 
+millimeter ,0.001,meter 
+millimeter ,6.21E-07,mile 
+millimeter ,39.37,mil 
+millimeter ,0.00109,yard 
+million gal per day,1.54723,cubic foot per sec
+mil ,0.00254,centimeter 
+mil ,8.33E-05,foot
+mil ,0.001,inch
+mil ,0.0254,millimeter 
+mil ,2.78E-05,yard 
+minim (British)( medical ),0.059192,cubic centimeter 
+minim (US fluid),0.061612,cubic centimeter 
+minute (angles),0.01667,degree 
+minute (angles),0.000185,quadrant 
+minute (angles),0.000291,radian 
+minute (angles),60,second 
+morgen,8565.32,square . meter
+minute ( more time unit  ),60,second 
+nautical mile (international),1852,meter
+neper ,8.686,decibel 
+newton,100000,dyne 
+newton,0.2248,pound force (lbf)
+oersted,79.57747,ampere per meter
+ohm (international),1.0005,ohm (absolute)
+ohm ,1E-06,megohm 
+ohm ,1000000,microhm 
+ounce ( oz. or ozs.),16,dram 
+ounce ( mas ),437.5,grain 
+ounce ,28.349523,gram 
+ounce ,28349.523,milligram 
+ounce ,0.0625,pound 
+ounce ( avoirdupoi ),0.9115,ounce (troy)
+ounce ,2.79E-05,ton (long)(UK)
+ounce ,2.84E-05,tonne (metric)
+ounce (fluid),1.805,cubic inch
+ounce (fluid),0.02957,liter 
+ounce (troy),480,grain 
+ounce (troy),31.103481,gram 
+ounce (troy),1.09714,ounce (avoirdupois)
+ounce (troy),20,pennyweight (troy)
+ounce (troy),0.08333,pound (troy)
+ounce per square inch,4309,dyne per square centimeter 
+ounce per square inch,0.0625,pound per square inch 
+oz or oz (short for ounce),28.349523,gram 
+parsec,19000000000000,mile 
+parsec,30856780000000,kilometer 
+ppm = part per million,0.058419,grain per U.S. gal.
+part per million,8.345,pound per million gal
+peck (British),554.6,cubic inch
+peck (British),9.091901,litre 
+peck (US),0.25,bushel 
+peck (US),537.605,cubic inch
+peck (US),8.809768,litre 
+peck (US),8,quart (dry)
+pennyweight (troy),24,grain 
+pennyweight (troy),0.05,ounce (troy)
+pennyweight (troy),1.555174,gram 
+pennyweight (troy),0.00417,pound (troy)
+perch (area),25.2929,square . meter
+perch (length),5.0292,meter
+perm (0deg.C),5.72135E-11,kilogram . per pascal sec square .m.
+perm inch (0deg.C),1.45322E-12,kilogram . per pascal sec m.
+phot,10000,lux
+pica (printing),4.217518,millimeter
+pica (computer),4.233333,millimeter
+pieze,1000,pascal
+pint (Brit.) ( pts. ),568.26125,cubic centimeter 
+pint (Brit.),34.67743,cubic inch
+pint (Brit.),0.125,gallon (Brit.)
+pint (Brit.),4,gill (Brit.)
+pint (Brit.),0.56826125,litre 
+pint (Brit.),568.26125,millilitre 
+pint (Brit.),20,ounce (Brit. fluid)
+pint (Brit.),1.032057,pint (US dry)
+pint (Brit.),1.20095,pint (US liquid)
+pint (US dry),550.6105,cubic centimeter 
+pint (US dry),33.6003125,cubic inch
+pint (US dry),0.5506105,litre 
+pint (US dry),550.6105,millitre 
+pint (US dry),0.0625,peck (US)
+pint (US dry),0.968939,pint (Brit. dry)
+pint (US dry),0.5,quart (US dry)
+pint (US liquid),473.1765,cubic centimeter 
+pint (US liquid),0.01671,cubic foot
+pint (US liquid),28.875,cubic inch
+pint (US liquid),0.000473,cubic meter 
+pint (US liquid),0.000619,cubic yard 
+pint (US liquid),0.125,gallon (US)
+pint (US liquid),4,gill (US)
+pint (US liquid),0.4731765,litre 
+pint (US liquid),473.1765,millilitre 
+pint (US liquid),16,ounce (US fluid)
+pint (US liquid),0.8326742,pint (Brit. liquid)
+pint (US liquid),0.5,quart (liquid)
+Plank's quantum,6.62E-27,erg-second
+point (printing),0.3514598,millimeter
+point (computer),0.3527778,millimeter
+poise (P),0.1,pascal sec
+poiseuille,1,pascal sec
+pole (area),25.2929,meter
+pole (length),5.0292,meter
+poundal ,13826,dyne 
+poundal ,14.1,gram 
+poundal ,0.00138,joule per centimeter 
+poundal ,0.138255,joule per meter (newtons)
+poundal per square . foot .,1.488164,pascal (Pa)
+poundal ,0.0141,kilogram 
+poundal ,0.03108,pound 
+pound ( lb ),256,dram 
+pound ,445000,dyne 
+pound ,7000,grain 
+pound ,453.5924,gram 
+pound ,0.04448,joule per centimeter 
+pound ,4.448,joule per meter (newtons)
+pound ( lb. ),0.4536,kilogram 
+pound ,16,ounce 
+pound ,14.5833,ounce (troy)
+pound ,32.17,poundal 
+pound ,1.21528,pound (troy)
+pound ,0.07142857,stone (British)
+pound ,0.0005,ton (short)
+pound (troy),5760,grain 
+pound (troy),373.24177,gram 
+pound (troy),13.1657,ounce (avoirdupois)
+pound (troy),12,ounce (troy)
+pound (troy),240,pennyweight (troy)
+pound (troy),0.822857,pound (avoirdupois)
+pound (troy),0.000367,ton (long)
+pound (troy),0.000373,tonne (metric)
+pound (troy),0.000411,ton (short)
+pound of water,0.01602,cubic foot
+pound of water,27.68,cubic inch
+pound of water,0.1198,gallon 
+pound of water per minch ,0.000267,cubic foot per sec
+pound-foot,13600000,centimeter -dyne 
+pound-foot,13825,centimeter -gram 
+pound-foot,0.1383,meter-kilogram s
+pound force (lbf),4.448,newton
+pound per cubic foot ,0.01602,gram per cubic centimeter 
+pound per cubic foot ,16.02,kilogram per cubic meter
+pound per cubic foot ,0.000579,pound per cubic inch 
+pound per cubic foot ,5.46E-09,pound per mil-foot
+pound per cubic inch ,27.68,gm per cubic centimeter 
+pound per cubic inch ,27700,kilogram per cubic meter
+pound per cubic inch ,1728,pound per cubic foot 
+pound per cubic inch ,9.43E-06,pound per mil-foot
+pound per foot ,1.488,kilogram per meter
+pound per inch ,178.6,gm per centimeter 
+pound per mil-foot,2310000,gm per cubic centimeter 
+pound per square foot ,0.000473,atmosphere 
+pound per square foot ,0.01602,foot of water
+pound per square foot ,0.01414,inch of mercury
+pound per square foot ,4.882428,kilogram per square meter
+pound per square foot ,0.00694,pound per square inch 
+pound per square inch ,0.06804,atmosphere 
+pound per square inch ,2.307,foot of water
+pound per square inch ,2.036,inch of mercury
+pound per square inch (not pound force!),703.0696,kilogram per square meter
+pound per square inch ,144,pound per square foot 
+pound per square .inch ,6894.757,pascal (Pa)
+psi (pounds-force per square .inch ),6.894757,kilopascal (kPa)
+quad,1.055056E+018,joule 
+quadrant (angle),90,degree 
+quadrant (angle),5400,minute 
+quadrant (angle),1.571,radian 
+quadrant (angle),324000,second 
+quarter (2 stone),12.70059,kilogram
+quart (dry),67.2,cubic inch
+quart (liquid),946.4,cubic cm 
+quart (liquid),0.03342,cubic foot
+quart (liquid),57.75,cubic inch
+quart (liquid),0.000946,cubic meter 
+quart (liquid),0.00124,cubic yard 
+quart (liquid),0.25,gallon 
+quart (liquid),0.9463,litre 
+quintal,100,kilogram
+rad (ionising radiation),0.01,gray (Gy)(joule per kilogram )
+radian ,57.29578,degree 
+radian ,3438,minute 
+radian ,206000,second 
+radian per sec,57.29578,degree per sec
+radian per sec,9.549,revolution per minch 
+radian per sec,0.1592,revolution per sec
+radian per sec per sec,572.9578,revs. per minch per minch 
+radian per sec per sec,9.549,revs. per minch per sec
+radian per sec per sec,0.1592,revs. per sec per sec
+réaumur,1.25,celsiu (oC)
+register ton (shipping),2.831685,cubic . meter
+rem,0.01,sievert (Sv)
+revolution ,360,degree 
+revolution ,4,quadrant 
+revolution ,6.283185,radian 
+revolution per minch (rpm),6,degree per sec
+revolution per minch ,0.1047198,radian per sec
+revolution per minch ,0.01667,revs. per sec
+revolution per minch per minch ,0.00175,radian per sec per sec
+revolution per minch per minch ,0.01667,rev per minch per minch 
+revolution per minch per minch ,0.000278,rev per sec per sec
+revolution per sec,360,degree per sec
+revolution per sec,6.283,radian per sec
+revolution per sec,60,rev per minch 
+revolution per sec per sec,6.283,radian per sec per sec
+revolution per sec per sec,3600,rev per minch per minch 
+revolution per sec per sec,60,rev per minch per sec
+rhe,10,per pascal sec
+rod,0.25,chainch (Gunter's)
+rod,5.02921,meter 
+rod (surveyor's meas.),5.5,yard 
+rod ,16.5,foot
+rontgen,0.000258,coulomb per kilogram
+rood (UK),1011.715,square . meter
+scruple ( see medical page ),20,grain 
+second (angle),0.000278,degree 
+second (angle),0.01666667,minute 
+second (angle),3.09E-06,quadrant 
+second (angle),4.848137E-06,radian 
+second (sidereal) (more time),0.9972696,second (s)
+shake,10,nanosecond (ns)
+slug,14.5939,kilogram
+slug,32.17,pound 
+slug per cubic foot,515.3788,kilogram per cubic meter
+slug per foot second,47.88026,pascal second
+span,9,inch
+sphere,12.57,steradian 
+square centimeter ,197000,circular mil 
+square centimeter ,0.00108,square foot
+square centimeter ,0.155,square inch
+square centimeter ,0.0001,square meter 
+square centimeter ,3.86E-11,square mile 
+square centimeter ,100,square millimeter 
+square centimeter ,0.00012,square yard 
+square foot,2.3E-05,acre 
+square foot,183000000,circular mil 
+square foot,929,square cm 
+square foot,144,square inch
+square foot,0.09290304,square meter 
+square foot,3.59E-08,square mile 
+square foot,92900,square millimeter 
+square foot,0.1111,square yard 
+square foot per hour,2.58064E-05,square m. per second
+square foot per second,0.09290304,square m. per second
+square inch,1270000,circular mil 
+square inch,6.452,square centimeter 
+square inch,0.00694,square foot
+square inch,645.2,square millimeter 
+square inch,1000000,square mil 
+square inch,0.000772,square yard 
+square kilometer ,247.1,acre 
+square kilometer ,10000000000,square cm 
+square kilometer ,10800000,square foot 
+square kilometer ,1550000000,square inch
+square kilometer ,1000000,square meter 
+square kilometer ,0.3861,square mile 
+square kilometer ,1200000,square yard 
+square meter ,0.000247,acre 
+square meter ,10000,square centimeter 
+square meter ,10.763915,square foot
+square meter ,1550,square inch
+square meter ,3.86E-07,square mile 
+square meter ,1000000,square millimeter 
+square meter ,1.196,square yard 
+square mile ,640,acre 
+square mile ,27900000,square foot
+square mile ,2.589988,square km 
+square mile ,2589988,square meter 
+square mile ,3100000,square yard 
+square millimeter ,1973,circular mil 
+square millimeter ,0.01,square cm 
+square millimeter ,1.08E-05,square foot
+square millimeter ,0.00155,square inch
+square mil ,1.273,circular mil 
+square mil ,6.45E-06,square cm 
+square mil ,1E-06,square inch
+square yard ,0.000207,acre 
+square yard ,8361,square cm 
+square yard ,9,square foot
+square yard ,1296,square inch
+square yard ,0.8361274,square meter 
+square yard ,3.23E-07,square mile 
+square yard ,836000,square millimeter 
+statampere,3.335641E-10,ampere
+statcoulomb,3.335641E-10,coulomb
+statfarad,1.112649E-12,farad
+stathenry,898755431000,henry
+statmho,1.112649E-12,siemen (S)
+statohm,898755431000,ohm
+statvolt,299.7925,volt
+stere,1,cubic . meter
+sthene,1000,newton
+stilb,10000,candela per square . meter
+stoke ,0.0001,meter square . per sec
+stone (British) ( medical ),14,pound (avoirdupois)
+stone (British),6.3502936,kilogram 
+tablespoon (UK & metric),15,millilitre
+tablespoon (US),14.78676,millilitre
+teaspoon (UK & metric),5,millilitre ( = cubic .centimeter = cc)
+teaspoon (US),4.928922,cubic centimeter ( = cc )
+therm (European),105506000,joule
+therm (US),105480400,joule
+thermie,4185500,joule
+thou (mil),2.54E-05,meter
+ton (long),1016.047,kilogram 
+ton (long),2240,pound 
+ton (long),1.12,ton (short)
+ton (tonne)(metric),1000,kilogram 
+ton (metric),2205,pound 
+ton (short),32000,ounce 
+ton (short),907.1847,kilogram 
+ton (short),2000,pound 
+ton (short),2430.56,pound (troy)
+ton (short),0.89287,ton (long)
+ton (short),0.9071847,tonne (metric)
+ton (short) per square .foot .,9765,kilogram per square meter
+ton (short) per square .foot .,2000,pound per square inch 
+ton of water per 24 hour,83.333,pound of water per hr
+ton of water per 24 hour,0.16643,gallon per minch 
+ton of water per 24 hour,1.3349,cubic foot per hr
+ton refrigeration,12000,btu per hour
+ton refrigeration,3024.117,kilocalorie per hour
+ton refrigeration,3517.2,watt 
+torr,133.32237,pascal
+unit pole,1.256637E-07,weber ( Wb )
+volt inch,0.3937,volt per centimeter 
+volt (absolute),0.003336,statvolt 
+watt ,3.4129,Btu per hr
+watt ,0.05688,Btu per minch 
+watt ,10000000,erg per sec
+watt ,44.27,foot-lb per minch 
+watt ,0.7378,foot-lb per sec
+watt ,0.00134,horsepower
+watt ,0.00136,horsepower (metric)
+watt ,0.01433,kilogram -calorie per minch 
+watt ,0.001,kilowatt 
+watt ,0.0002843,ton refrigeration
+watt ( see detail  ),watt per volt ,amp 
+watt (absolute),0.056884,Btu (mean) per minch 
+watt (absolute),1,joule per sec
+watt hour,3600,joule
+watt-hour ,3.413,Btu
+watt-hour ,36000000000,erg 
+watt-hour ,2656,foot-pound 
+watt-hour ,859.85,gram-calorie 
+watt-hour ,0.00134,horsepower-hour
+watt-hour ,0.8605,kilogram-calorie 
+watt-hour ,367.2,kiloram-meter 
+watt-hour ,0.001,kilowatt-hour
+watt (international),1.0002,watt (absolute)
+weber ,100000000,maxwell 
+weber ,100000,kiloline 
+weber per square inch ,15500000,gausse 
+weber per square inch ,100000000,line per square inch 
+weber per square inch ,0.155,weber per square centimeter 
+weber per square inch ,1550,weber per square meter
+weber per square meter,10000,gausse 
+weber per square meter,64500,line per square inch 
+weber per square meter,0.0001,weber per square centimeter 
+weber per square meter,0.000645,weber per square inch 
+week,7,day
+week,168,hour
+week,10080,minute (time)
+week,0.2299795,month
+week,605000,second
+yard ,91.44,centimeter 
+yard ,0.5,fathom
+yard ,3,foot
+yard ,36,inch
+yard ,0.000914,kilometer 
+yard ,0.9144,meter 
+yard ,0.000493,mile (nautical)
+yard ,0.000568,mile (statute)
+yard ,914.4,millimeter 
+year (mean of 4 year period),365.25,day ( more on time )
+year (mean of 4 year period),8766,hour
+year (mean of 4 year period),526000,minute (time)
+year (mean of 4 year period),31558150,second (time)
+year (mean of 4 year period),52.17857,week
