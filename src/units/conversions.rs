@@ -31,7 +31,7 @@ pub struct Table {
     /// string slices as a key and returns a conversion factor. This should
     /// *feel* the same as having a generic function that knows how to convert
     /// between units.
-    convert: HashMap<(&'static str, &'static str), f32>,
+    pub convert: HashMap<(&'static str, &'static str), f32>,
 }
 
 impl Table {
