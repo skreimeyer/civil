@@ -14,4 +14,5 @@ readme = "README.md"
 [badges]
 travis-ci = { repository = "https://travis-ci.org/skreimeyer/civil", branch = "master" }
 codecov = { repository = "https://codecov.io/gh/skreimeyer/civil", branch = "master" }
+
 [dependencies]
