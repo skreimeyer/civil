@@ -1,9 +1,9 @@
 [package]
 name = "civil"
-description="a library to support civil engineering applications"
+description="a library to support civil engineering applications (WIP)"
 keywords=["civil-engineering", "engineering-library", "civil"]
 categories=["science"]
-version = "0.0.3"
+version = "0.1.0"
 authors = ["Sam Kreimeyer"]
 edition = "2018"
 license = "MIT"
