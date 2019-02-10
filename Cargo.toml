@@ -7,6 +7,9 @@ version = "0.1.0"
 authors = ["Sam Kreimeyer"]
 edition = "2018"
 license = "MIT"
+homepage = "https://github.com/skreimeyer/civil"
+repository = "https://github.com/skreimeyer/civil"
+readme = "README.md"
 
 [badges]
 travis-ci = { repository = "https://travis-ci.org/skreimeyer/civil", branch = "master" }
