@@ -51,7 +51,7 @@ with open("formatted_conversions.txt",'w') as outfile:
             s[0] = s[0].strip() # strip any whitespace
             s[2] = s[2].replace('.','')
             s[2] = s[2].strip() # strip the newline character
-            expression = 'factors.insert(("{0}","{1}"),{2});\n'.format(s[0],s[2],s[1])
+            expression = 'factors.insert(("{0}","{1}"),{2});\n'.format(s[0],s[2],float(s[1]))
             # We should have 'factors.insert(("meter","foot"),3.2)'
             outfile.write(expression)
         except:
