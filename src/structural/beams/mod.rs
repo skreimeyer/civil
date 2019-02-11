@@ -24,11 +24,13 @@
 /// This trait gives us a common interface to the formulas used for
 /// determining the properties of beams which vary with a particular beam
 /// cross section.
-pub trait BeamProperties {
+pub trait Beam {
     fn area(&self) -> f32;
     fn moment_of_inertia(&self) -> f32;
     fn section_modulus(&self) -> f32;
-    fn radius_of_gyration(&self) -> f32;
+    fn radius_of_gyration(&self) -> f32  {
+        (self.moment_of_inertia() / self.area()).powf(0.5)
+    }
 }
 
 /// A beam with a solid, rectangular cross section
@@ -41,7 +43,7 @@ pub struct RectangularBeam {
 }
 
 /// Gere, J. M. and Timnko, S., 1997, Mechanics of Materials 4th Ed., PWS Publishing Co.
-impl BeamProperties for RectangularBeam {
+impl Beam for RectangularBeam {
     fn area(&self) -> f32 {
         self.d * self.b
     }
@@ -50,9 +52,6 @@ impl BeamProperties for RectangularBeam {
     }
     fn section_modulus(&self) -> f32 {
         self.b * self.d.powf(2.0) / 6.0
-    }
-    fn radius_of_gyration(&self) -> f32  {
-        (self.moment_of_inertia() / self.area()).powf(0.5)
     }
 }
 
@@ -66,7 +65,7 @@ pub struct TriangularBeam {
 }
 
 /// Gere, J. M. and Timnko, S., 1997, Mechanics of Materials 4th Ed., PWS Publishing Co.
-impl BeamProperties for TriangularBeam {
+impl Beam for TriangularBeam {
     fn area(&self) -> f32 {
         self.d * self.b / 2.0
     }
@@ -76,24 +75,4 @@ impl BeamProperties for TriangularBeam {
     fn section_modulus(&self) -> f32 {
         self.b * self.d.powf(2.0) / 24.0
     }
-    fn radius_of_gyration(&self) -> f32  {
-        (self.moment_of_inertia() / self.area()).powf(0.5)
-    }
-}
-
-/* ### I'm not quite sure these last parts make sense ### */
-
-/// This enum contains all the different structs which refer to beams with
-/// specific cross sections.
-#[derive(Debug)]
-pub enum BeamType {
-    Rectangular(RectangularBeam),
-    Triangular(TriangularBeam),
-}
-
-/// This struct represents a beam and generic methods can be used to obtain
-/// useful properties of the beam
-#[derive(Debug)]
-pub struct Beam {
-    pub section: BeamType
 }
