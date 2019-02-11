@@ -1,5 +1,6 @@
 [![Build Status](https://travis-ci.org/skreimeyer/civil.svg?branch=master)](https://travis-ci.org/skreimeyer/civil)
-[![codecov](https://codecov.io/gh/skreimeyer/civil/branch/master/graph/badge.svg)](https://codecov.io/gh/skreimeyer/civil)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+![](https://img.shields.io/crates/d/civil.svg?style=flat)
 
 __This is a work in progress__
 

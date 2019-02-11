@@ -81,6 +81,8 @@ impl BeamProperties for TriangularBeam {
     }
 }
 
+/* ### I'm not quite sure these last parts make sense ### */
+
 /// This enum contains all the different structs which refer to beams with
 /// specific cross sections.
 #[derive(Debug)]
