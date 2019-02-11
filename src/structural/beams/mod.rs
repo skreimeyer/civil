@@ -65,6 +65,7 @@ pub struct TriangularBeam {
     pub b: f32,
 }
 
+/// Gere, J. M. and Timnko, S., 1997, Mechanics of Materials 4th Ed., PWS Publishing Co.
 impl BeamProperties for TriangularBeam {
     fn area(&self) -> f32 {
         self.d * self.b / 2.0
@@ -89,7 +90,7 @@ pub enum BeamType {
 }
 
 /// This struct represents a beam and generic methods can be used to obtain
-/// useful properties of a beam
+/// useful properties of the beam
 #[derive(Debug)]
 pub struct Beam {
     pub section: BeamType
