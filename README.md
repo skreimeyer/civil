@@ -5,7 +5,11 @@ __This is a work in progress__
 
 # Civil
 
-This package is meant to provide solutions to common civil engineering problems. Everything is very much a work in progress. Ideally, on maturity, this library should support developers interested in making applications that assist with tasks like determining the geometric design of streets, sizing culverts and basic economic analysis for construction projects. The ultimate goal is to have a simple API for common civil engineering design equations so that an application developer can focus more on application-specific implementation rather than on researching methods. The aim of Civil is to be comprehensive enough to be useful, but simple enough to be flexible and lightweight. Consequently, complex tasks, like reading in digital elevation models, delineating watersheds and transforming geometric objects to be written to some very vendor-specific file types (I'm looking at you .DWG) is out of scope for this project.
+This package is meant to provide solutions to common civil engineering problems. Everything is very much a work in progress. Ideally, on maturity, this library should support developers interested in making applications that assist with tasks like determining the geometric design of streets, sizing culverts and basic economic analysis for construction projects. The ultimate goal is to have a simple API for common civil engineering design equations so that an application developer can focus more on application-specific implementation rather than on researching methods.
+
+A good example of the intended effect would be if a web developer could write a short function in Rust that uses this API to, say, calculate the flow of water in an open channel given channel dimensions and roughness, then compile that to WASM and call that function from JS with user inputs to produce a graphical representation of the channel in a <canvas> element. Another good use case would be the functions in this library being used to support a module or extension in a CAD suite.
+
+The aim of Civil is to be comprehensive enough to be useful, but simple enough to be flexible and lightweight. Consequently, complex tasks, like reading in digital elevation models, delineating watersheds and transforming geometric objects to be written to some very vendor-specific file types (I'm looking at you .DWG) is out of scope for this project.
 
 ## Why?
 
@@ -15,22 +19,18 @@ This package is meant to provide solutions to common civil engineering problems.
 
 > Why make a library at all?
 
-2. The freely available software tools that are intended to support developers are multitude. The tools available to support other industries are much fewer. This makes sense because most of the software is written by programmers, and programmers deal with (and see solutions for) problems that impact developers rather than those problems that affect the Architecture-Engineering-Construction world. Logically, what you are left with are about a trillion repositories on GitHub for developers' problems (and novel forms of entertainment ie **games**), and approximately zero for engineer's problems. I hope this is a step in the direction of closing that gap.
-
-> Why make a library at all, but this time without your snide annotations?
-
-3. Engineers and designers solve important tangible problems. Modern infrastructure like water and sanitation enable a quality of life that was impossible just a few hundred years ago. Lowering the barriers to providing these benefits to more people makes the world a better place. Robust, freely available software lowers the barriers.
+2. Engineers and designers solve important, tangible problems. Modern infrastructure like water and sanitation enable a quality of life that was impossible just a few generations years ago. Lowering the barriers to providing these benefits to more people makes the world a better place. Robust, freely available software lowers the barriers, and currently there are not the multitude of tools available such as those for problem domains like, dev-ops, for example.
 
 > Why Rust?
 
-4. Rust provides a combination of safety and performance guarantees that are hard to find elsewhere (or at least, never achieved much popularity). I think the need for total reliability of engineering design software should be self-explanatory.
+3. Rust provides a combination of safety and performance guarantees that are hard to find elsewhere (or at least, never achieved much popularity). I think the need for total reliability of engineering design software should be self-explanatory.
 
 ## The Road to 0.1.0
 Checklist:
 - ~~Scaffold for finished program is near complete. Modules have a sensible layout and major logical groupings have been made.~~
 - ~~Module files properly reference other shell module files~~
 - ~~At least one useful thing exposed~~
-- Sensible TO-DOs where they belong for reference
+- ~~Sensible TO-DOs where they belong for reference~~
 
 ## The Road to 1.0.0
 Checklist:
@@ -38,7 +38,7 @@ Checklist:
 - 100% function documentation
 - 90% code coverage or better
 - Partial benchmarking of functions to support implementation style
-- All unstable features are migrated to a development.
+- All unstable features are migrated to a development branch.
 
 ## Beyond!
 Checklist:
