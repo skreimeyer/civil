@@ -23,7 +23,6 @@
 
 const PI:f32 = std::f32::consts::PI;
 
-
 /// This trait gives us a common interface to the formulas used for
 /// determining the properties of beams which vary with a particular beam
 /// cross section.
@@ -37,37 +36,40 @@ pub trait Beam {
     // More to come . . .
 }
 
+/// Gere, James M., "Mechanics of Materials," 6th Ed.
 #[derive(Debug)]
 pub struct PolygonalBeam {
-    pub R: f32, // Circumscribed radius
-    pub r: f32, // Inscribed radius (apothem)
-    pub n: i32, // Number of sides
-    pub s: f32, // Side length
+    pub circumscribed_radius: f32, // Circumscribed radius
+    pub inscribed_radius: f32, // Inscribed radius (apothem)
+    pub number_sides: i32, // Number of sides
+    pub side_length: f32, // Side length
 }
 
+#[allow(dead_code)]
 impl PolygonalBeam {
-    fn new(s: f32, n: i32) -> PolygonalBeam {
+    pub fn new(side_length: f32, number_sides: i32) -> PolygonalBeam {
         PolygonalBeam {
-            R: s / 2.0 / (180.0 / n as f32).sin(),
-            r: s / 2.0 /(180.0 / n as f32).tan(),
-            n: n,
-            s: s,
+            circumscribed_radius: side_length / 2.0 / (PI / number_sides as f32).sin(),
+            inscribed_radius: side_length / 2.0 /(PI / number_sides as f32).tan(),
+            number_sides: number_sides,
+            side_length: side_length,
         }
     }
 }
 
 impl Beam for PolygonalBeam {
     fn area(&self) -> f32 {
-        self.n as f32 * self.s * self.r / 2.0
+        self.number_sides as f32 * self.side_length * self.inscribed_radius / 2.0
     }
     fn moment_of_inertia(&self) -> f32 {
-        self.area() / 24.0 * (6.0 * self.R.powi(2) - self.s.powi(2))
+        self.area() / 24.0 * (6.0 * self.circumscribed_radius.powi(2) - self.side_length.powi(2))
     }
     fn section_modulus(&self) -> f32 {
-        self.moment_of_inertia() / self.r
+        self.moment_of_inertia() / self.inscribed_radius
     }
 }
 
+/// Gere, James M., "Mechanics of Materials," 6th Ed.
 #[derive(Debug)]
 struct TrapezoidalBeam {
     pub minor: f32,
@@ -76,8 +78,9 @@ struct TrapezoidalBeam {
     diff_lengths : f32,
 }
 
+#[allow(dead_code)]
 impl TrapezoidalBeam {
-    fn new(minor:f32,major:f32,height:f32) -> TrapezoidalBeam {
+    pub fn new(minor:f32,major:f32,height:f32) -> TrapezoidalBeam {
         TrapezoidalBeam {
             minor: minor,
             major: major,
@@ -104,15 +107,16 @@ impl Beam for TrapezoidalBeam {
 /// Gere, James M., "Mechanics of Materials," 6th Ed.
 #[derive(Debug)]
 struct IBeam {
-    width: f32,
-    height: f32,
-    flange: f32, // thickness
-    web: f32, // thickness
-    web_height: f32,
+    pub width: f32,
+    pub height: f32,
+    pub flange: f32, // thickness
+    pub web: f32, // thickness
+    pub web_height: f32,
 }
 
+#[allow(dead_code)]
 impl IBeam {
-    fn new(width:f32, height:f32, flange:f32, web:f32) -> IBeam {
+    pub fn new(width:f32, height:f32, flange:f32, web:f32) -> IBeam {
         IBeam {
             width: width,
             height: height,
@@ -140,12 +144,13 @@ impl Beam for IBeam {
 /// Gere, James M., "Mechanics of Materials," 6th Ed.
 #[derive(Debug)]
 struct CircularBeam {
-    rad: f32,
-    dia: f32,
+    pub rad: f32,
+    pub dia: f32,
 }
 
+#[allow(dead_code)]
 impl CircularBeam {
-    fn new(rad:f32) -> CircularBeam {
+    pub fn new(rad:f32) -> CircularBeam {
         CircularBeam {
             rad: rad,
             dia: 2.0 * rad
@@ -168,12 +173,13 @@ impl Beam for CircularBeam {
 /// Gere, James M., "Mechanics of Materials," 6th Ed.
 #[derive(Debug)]
 struct CircularTube {
-    inner_radius: f32,
-    outer_radius: f32,
+    pub inner_radius: f32,
+    pub outer_radius: f32,
 }
 
+#[allow(dead_code)]
 impl CircularTube {
-    fn new(inner_radius:f32,outer_radius:f32) -> CircularTube{
+    pub fn new(inner_radius:f32,outer_radius:f32) -> CircularTube{
         CircularTube {
             inner_radius: inner_radius,
             outer_radius: outer_radius,
