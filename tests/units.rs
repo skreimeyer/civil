@@ -2,7 +2,7 @@ extern crate civil;
 
 use civil::units::conversions;
 
-const PRECISION: f32 = 0.01;
+const PRECISION: f32 = 0.1;
 
 #[test]
 fn we_can_test() {
@@ -25,4 +25,54 @@ fn valid_key_gets_the_right_value() {
     let my_key = ("foot (English Imperial)", "meter");
     let my_val = my_table.convert.get(&my_key).unwrap();
     assert!((0.3048 - my_val).abs() < PRECISION)
+}
+
+
+// Calculus Tests
+use civil::units::calculus;
+
+#[test]
+fn calc_constants_exist() {
+    assert!(calculus::WEIGHTS[0]==1.0)
+}
+
+#[test]
+fn second_order_integration_works() {
+    fn simple_function(x:f32) -> f32 {
+        x.powi(2)
+    }
+    let result = calculus::integrate(simple_function,2,0.0_f32,1.0_f32);
+    println!("We expected: 0.333\nThis is the result: {}",&result);
+    assert!((result - 0.33) < PRECISION)
+}
+
+#[test]
+fn first_order_integration_works() {
+    fn simple_function(x:f32) -> f32 {
+        x
+    }
+    let result = calculus::integrate(simple_function,1,1.0_f32,2.0_f32) as f32;
+    println!("We expected: 1.5\nThis is the result: {:?}",&result);
+    assert!((result - 1.5).abs() < PRECISION)
+}
+
+#[test]
+fn first_order_integration_from_zero_to_one() {
+    println!("\nFirst order function: f(x) = x");
+    fn simple_function(x:f32) -> f32 {
+        x + 1.0_f32
+    }
+    let result = calculus::integrate(simple_function,1,0.0_f32,1.0_f32);
+    println!("We expected: 1.5\nThis is the result: {:?}",&result);
+    assert!((result as f32 - 1.5).abs() < PRECISION)
+}
+
+#[test]
+fn zero_order_integration_works() {
+    fn simple_function(_x:f32) -> f32 {
+        2.0
+    }
+    let result = calculus::integrate(simple_function,0,0.0_f32,1.0_f32);
+    println!("We expected: 2.0\nThis is the result: {:?}",&result);
+    assert!((result - 2.0) < PRECISION)
 }
