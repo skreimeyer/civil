@@ -224,28 +224,29 @@ impl Load {
             magnitude: magnitude,
         }
     }
-    /// convenience function to allow quick definition of point loads
-    pub fn point(location:f32,magnitude:f32) -> Load {
-        fn mag(_x:f32) -> f32 {
-            magnitude
-        }
-        Load {
-            origin: location,
-            end: location,
-            magnitude: mag,
-        }
-    }
-    /// convenience function to allow quick definition of distributed loads
-    pub fn distributed(origin:f32,end:f32,magnitude:f32) -> Load {
-        fn mag(_x:f32) -> f32 {
-            magnitude
-        }
-        Load {
-            origin: origin,
-            end: end,
-            magnitude: mag,
-        }
-    }
+    // as of now, this doesn't seem possible.
+    // /// convenience function to allow quick definition of point loads
+    // pub fn point(location:f32,magnitude:f32) -> Load {
+    //     fn mag(_x:f32) -> f32 {
+    //         magnitude
+    //     }
+    //     Load {
+    //         origin: location,
+    //         end: location,
+    //         magnitude: mag,
+    //     }
+    // }
+    // /// convenience function to allow quick definition of distributed loads
+    // pub fn distributed(origin:f32,end:f32,magnitude:f32) -> Load {
+    //     fn mag(_x:f32) -> f32 {
+    //         magnitude
+    //     }
+    //     Load {
+    //         origin: origin,
+    //         end: end,
+    //         magnitude: mag,
+    //     }
+    // }
 }
 
 // ### Define our different types of beam supports ###
