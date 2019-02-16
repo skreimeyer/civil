@@ -36,6 +36,10 @@ pub trait Beam {
     // More to come . . .
 }
 
+// So refrigerator-thought . . . what if instead of having a "beam" trait,
+// we instead just have a Beam struct, and impl new_something_beam to handle
+// the differences in the types of beams.
+
 /// Gere, James M., "Mechanics of Materials," 6th Ed.
 #[derive(Debug)]
 pub struct PolygonalBeam {
@@ -197,4 +201,56 @@ impl Beam for CircularTube {
     fn section_modulus(&self) -> f32 {
         PI / 4.0 * (self.outer_radius.powi(4) - self.inner_radius.powi(4)) / self.outer_radius
     }
+}
+
+// ### Define our different types of loadings ###
+
+#[derive(Debug)]
+struct Load {
+    pub origin: f32,
+    pub end: f32,
+    pub magnitude: fn(x:f32) -> f32,
+}
+
+#[allow(dead_code)]
+impl Load {
+    /// Takes a start point, end point (relative to the beam) and a function
+    /// the function can be any function which takes a location on the beam
+    /// ie the x variable, and returns a number (the magnitude of the load)
+    pub fn new(origin:f32,end:f32,magnitude:fn(x:f32)->f32) -> Load {
+        Load {
+            origin: origin,
+            end: end,
+            magnitude: magnitude,
+        }
+    }
+    /// convenience function to allow quick definition of point loads
+    pub fn point(location:f32,magnitude:f32) -> Load {
+        fn mag(_x:f32) -> f32 {
+            magnitude
+        }
+        Load {
+            origin: location,
+            end: location,
+            magnitude: mag,
+        }
+    }
+    /// convenience function to allow quick definition of distributed loads
+    pub fn distributed(origin:f32,end:f32,magnitude:f32) -> Load {
+        fn mag(_x:f32) -> f32 {
+            magnitude
+        }
+        Load {
+            origin: origin,
+            end: end,
+            magnitude: mag,
+        }
+    }
+}
+
+// ### Define our different types of beam supports ###
+
+enum Support {
+    Fixed,
+    Simple,
 }
