@@ -23,7 +23,7 @@ fn nonexistant_keys_return_none() {
 fn valid_key_gets_the_right_value() {
     let my_table = conversions::Table::new();
     let my_key = ("foot (English Imperial)", "meter");
-    let my_val = my_table.convert.get(&my_key).unwrap();
+    let my_val = dbg!(my_table.convert.get(&my_key).unwrap());
     assert!((0.3048 - my_val).abs() < PRECISION)
 }
 
@@ -41,8 +41,7 @@ fn second_order_integration_works() {
     fn simple_function(x:f32) -> f32 {
         x.powi(2)
     }
-    let result = calculus::integrate(simple_function,2,0.0_f32,1.0_f32);
-    println!("We expected: 0.333\nThis is the result: {}",&result);
+    let result = dbg!(calculus::integrate(simple_function,2,0.0_f32,1.0_f32));
     assert!((result - 0.33) < PRECISION)
 }
 
@@ -51,19 +50,16 @@ fn first_order_integration_works() {
     fn simple_function(x:f32) -> f32 {
         x
     }
-    let result = calculus::integrate(simple_function,1,1.0_f32,2.0_f32) as f32;
-    println!("We expected: 1.5\nThis is the result: {:?}",&result);
+    let result = dbg!(calculus::integrate(simple_function,1,1.0_f32,2.0_f32) as f32);
     assert!((result - 1.5).abs() < PRECISION)
 }
 
 #[test]
 fn first_order_integration_from_zero_to_one() {
-    println!("\nFirst order function: f(x) = x");
     fn simple_function(x:f32) -> f32 {
         x + 1.0_f32
     }
-    let result = calculus::integrate(simple_function,1,0.0_f32,1.0_f32);
-    println!("We expected: 1.5\nThis is the result: {:?}",&result);
+    let result = dbg!(calculus::integrate(simple_function,1,0.0_f32,1.0_f32));
     assert!((result as f32 - 1.5).abs() < PRECISION)
 }
 
@@ -72,7 +68,6 @@ fn zero_order_integration_works() {
     fn simple_function(_x:f32) -> f32 {
         2.0
     }
-    let result = calculus::integrate(simple_function,0,0.0_f32,1.0_f32);
-    println!("We expected: 2.0\nThis is the result: {:?}",&result);
+    let result = dbg!(calculus::integrate(simple_function,0,0.0_f32,1.0_f32));
     assert!((result - 2.0) < PRECISION)
 }

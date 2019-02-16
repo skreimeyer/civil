@@ -12,8 +12,7 @@ fn we_can_test() {
 
 #[test]
 fn polygonal_beam_area() {
-    let rect_beam = structural::beams::PolygonalBeam::new(2.0, 4);
-    println!("Beam area is: {}",rect_beam.area());
+    let rect_beam = dbg!(structural::beams::PolygonalBeam::new(2.0, 4));
     assert!((rect_beam.area() - 4.0).abs() < PRECISION)
 }
 
