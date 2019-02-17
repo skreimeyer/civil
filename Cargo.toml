@@ -16,3 +16,7 @@ travis-ci = { repository = "https://travis-ci.org/skreimeyer/civil", branch = "m
 codecov = { repository = "https://codecov.io/gh/skreimeyer/civil", branch = "master" }
 
 [dependencies]
+
+[lib]
+name = "civil"
+crate-type = ["lib"]
