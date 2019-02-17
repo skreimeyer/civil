@@ -205,11 +205,11 @@ impl Beam for CircularTube {
 
 // ### Define our different types of loadings ###
 
-#[derive(Debug)]
-struct Load {
+//#[derive(Debug)]
+pub struct Load {
     pub origin: f32,
     pub end: f32,
-    pub magnitude: fn(x:f32) -> f32,
+    pub magnitude: Box<Fn(f32) -> f32>,
 }
 
 #[allow(dead_code)]
@@ -221,36 +221,30 @@ impl Load {
         Load {
             origin: origin,
             end: end,
-            magnitude: magnitude,
+            magnitude: Box::new(magnitude),
         }
     }
-    // as of now, this doesn't seem possible.
-    // /// convenience function to allow quick definition of point loads
-    // pub fn point(location:f32,magnitude:f32) -> Load {
-    //     fn mag(_x:f32) -> f32 {
-    //         magnitude
-    //     }
-    //     Load {
-    //         origin: location,
-    //         end: location,
-    //         magnitude: mag,
-    //     }
-    // }
-    // /// convenience function to allow quick definition of distributed loads
-    // pub fn distributed(origin:f32,end:f32,magnitude:f32) -> Load {
-    //     fn mag(_x:f32) -> f32 {
-    //         magnitude
-    //     }
-    //     Load {
-    //         origin: origin,
-    //         end: end,
-    //         magnitude: mag,
-    //     }
-    // }
+    /// convenience function to allow quick definition of point loads
+    pub fn point(location:f32,magnitude:f32) -> Load {
+        Load {
+            origin: location,
+            end: location,
+            magnitude: Box::new(move |_any_x_value| magnitude),
+        }
+    }
+    /// convenience function to allow quick definition of distributed loads
+    pub fn distributed(origin:f32,end:f32,magnitude:f32) -> Load {
+        Load {
+            origin: origin,
+            end: end,
+            magnitude: Box::new(move |_x| magnitude),
+        }
+    }
 }
 
 // ### Define our different types of beam supports ###
 
+#[allow(dead_code)]
 enum Support {
     Fixed,
     Simple,
