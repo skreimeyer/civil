@@ -40,6 +40,8 @@ pub trait Beam {
 // we instead just have a Beam struct, and impl new_something_beam to handle
 // the differences in the types of beams.
 
+/// A beam with a solid, regular-polygonal cross section. This would include
+/// rectangular beams, and any shape with three or more sides of equal length
 /// Gere, James M., "Mechanics of Materials," 6th Ed.
 #[derive(Debug)]
 pub struct PolygonalBeam {
@@ -73,6 +75,9 @@ impl Beam for PolygonalBeam {
     }
 }
 
+/// A solid beam with a trapezoidal cross section. These are not typically
+/// used in common construction practice; however, they could be useful for
+/// exploring the behavior of novel building materials.
 /// Gere, James M., "Mechanics of Materials," 6th Ed.
 #[derive(Debug)]
 struct TrapezoidalBeam {
@@ -108,6 +113,8 @@ impl Beam for TrapezoidalBeam {
     }
 }
 
+/// A beam with an "I" shaped cross section. This includes standard beams
+/// "s-beams" and wide-flange beams "w-beams"
 /// Gere, James M., "Mechanics of Materials," 6th Ed.
 #[derive(Debug)]
 struct IBeam {
@@ -145,6 +152,7 @@ impl Beam for IBeam {
     }
 }
 
+/// A beam with a round, solid cross section
 /// Gere, James M., "Mechanics of Materials," 6th Ed.
 #[derive(Debug)]
 struct CircularBeam {
@@ -174,6 +182,7 @@ impl Beam for CircularBeam {
     }
 }
 
+/// A beam with a circular cross section with a hollow center.
 /// Gere, James M., "Mechanics of Materials," 6th Ed.
 #[derive(Debug)]
 struct CircularTube {
@@ -206,6 +215,14 @@ impl Beam for CircularTube {
 // ### Define our different types of loadings ###
 
 //#[derive(Debug)]
+/// Load represents a non-reactive force applied to a beam. This could be the
+/// weight of some object being supported, like another beam a working load
+/// or anything else which acts directly on the beam. Loads are defined by
+/// three things:
+/// 1. origin: relative position beyond which the force acts on the beam
+/// 2. end: relative position where the force stops acting on the beam
+/// 3. magnitude: a function which accepts a relative position as an argument
+/// and returns some value in units of force. ie f(x) = x * 2
 pub struct Load {
     pub origin: f32,
     pub end: f32,
@@ -224,7 +241,14 @@ impl Load {
             magnitude: Box::new(magnitude),
         }
     }
-    /// convenience function to allow quick definition of point loads
+    /// convenience function to allow quick definition of point loads. Point
+    /// loads are the same as concentrated loads, or a force acting on a beam
+    /// which is located at a single point. If the beam is supporting another
+    /// beam joined by a pin, the force caused by the weight of the supported
+    /// beam would be an example of a point load.
+    /// Arguments:
+    /// - location: relative position on the beam where weight is concentrated
+    /// - magnitude: weight or force applied.
     pub fn point(location:f32,magnitude:f32) -> Load {
         Load {
             origin: location,
@@ -232,7 +256,14 @@ impl Load {
             magnitude: Box::new(move |_any_x_value| magnitude),
         }
     }
-    /// convenience function to allow quick definition of distributed loads
+    /// Convenience function to allow quick definition of distributed loads.
+    /// Distributed loads refer to weight which is uniformly distributed
+    /// across all or part of the beam. Supported objects with a wide contact
+    /// area with the supporting beam could be modeled as a distributed load.
+    /// Arguments:
+    /// - origin: starting point relative to the beam in units of length
+    /// - end: end point of the load
+    /// - magnitude: the unit force per unit length (ie 1 pound per foot)
     pub fn distributed(origin:f32,end:f32,magnitude:f32) -> Load {
         Load {
             origin: origin,
@@ -244,6 +275,11 @@ impl Load {
 
 // ### Define our different types of beam supports ###
 
+/// Beam supports. Where a beam support does not exist, the beam is implicitly
+/// free (unsupported). Otherwise, the beam support is `Fixed` (a support which
+/// can provide a reaction shear and a reaction moment) or the beam is
+/// `Simple` (a support which can provide a reaction shear but not a reaction
+/// moment)
 #[allow(dead_code)]
 enum Support {
     Fixed,
