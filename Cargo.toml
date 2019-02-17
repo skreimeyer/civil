@@ -19,4 +19,4 @@ codecov = { repository = "https://codecov.io/gh/skreimeyer/civil", branch = "mas
 
 [lib]
 name = "civil"
-crate-type = ["lib"]
+crate-type = ["rlib"]
