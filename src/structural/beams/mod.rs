@@ -281,7 +281,13 @@ impl Load {
 /// `Simple` (a support which can provide a reaction shear but not a reaction
 /// moment)
 #[allow(dead_code)]
-enum Support {
-    Fixed,
-    Simple,
+pub enum SupportType {
+        Fixed,
+        Simple,
+    }
+
+#[allow(dead_code)]
+pub struct Support {
+    pub support_type: SupportType,
+    pub location: f32,
 }
