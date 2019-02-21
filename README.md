@@ -9,10 +9,10 @@ Here's my heartache-filled blogpost:
 I started this project to
 1. study for the PE exam in a novel way
 2. build proficiency in Rust.
-..* Because Rust ostensibly provides security other languages don't.
-..* Because Rust is high performance with "zero cost abstractions"
-..* Because Rust is "The C++ killer"; it's the future. Just RIIR, man.
-..* Because I thought the frustration would all be worth it when some kid in the boonies could learn all about how bridges are built from some website built off this library compiled to WASM and dolled up with D3.
++ Because Rust ostensibly provides security other languages don't.
++ Because Rust is high performance with "zero cost abstractions"
++ Because Rust is "The C++ killer"; it's the future. Just RIIR, man.
++ Because I thought the frustration would all be worth it when some kid in the boonies could learn all about how bridges are built from some website built off this library compiled to WASM and dolled up with D3.
 
 So it turns out there aren't any of the critical linear algebra libraries needed for solvers, etc. that are native to Rust. So I'm fighting a no-compromise compiler for the right to smugly say, "I am 100% confident this software will work, bug-free," which now has to have a big asterisk next to that statement. I have total confidence in BLAS and LAPACK for being error-free, but if you're forcing yourself into a *language* level guarantee that certain errors *can't* happen, then falling back to "dude, just trust me. The person who wrote this dependency is really smart" seems like it betrays the entire point. If you trust the smart people behind BLAS, why not the smart people who wrote gcc? why not trust some random dude's npm package? And it's not even just I'm mad that somebody didn't lay 100 man-years of linear algebra libraries at my feet in the language that I want; Rust's standard library regularly uses 'unsafe,' apparently, so why am I stressing over safety and purity again?
 
