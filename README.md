@@ -3,38 +3,7 @@
 ![](https://img.shields.io/crates/d/civil.svg?style=flat)
 
 ~~__This is a work in progress__~~
- __This is no longer under active development__
-
-Here's my heartache-filled blogpost:
-I started this project to
-1. study for the PE exam in a novel way
-2. build proficiency in Rust.
-+ Because Rust ostensibly provides security other languages don't.
-+ Because Rust is high performance with "zero cost abstractions"
-+ Because Rust is "The C++ killer"; it's the future. Just RIIR, man.
-+ Because I thought the frustration would all be worth it when some kid in the boonies could learn all about how bridges are built from some website built off this library compiled to WASM and dolled up with D3.
-
-So it turns out there aren't any of the critical linear algebra libraries needed for solvers, etc. that are native to Rust. So I'm fighting a no-compromise compiler for the right to smugly say, "I am 100% confident this software will work, bug-free," which now has to have a big asterisk next to that statement. I have total confidence in BLAS and LAPACK for being error-free, but if you're forcing yourself into a *language* level guarantee that certain errors *can't* happen, then falling back to "dude, just trust me. The person who wrote this dependency is really smart" seems like it betrays the entire point. If you trust the smart people behind BLAS, why not the smart people who wrote gcc? Why not trust some random dude's npm package? And it's not even just that I'm mad that somebody didn't lay 100 man-years of linear algebra libraries at my feet in the language that I want; Rust's standard library regularly uses 'unsafe' operations for performance, apparently, so why am I stressing over safety and purity again?
-
-Chalk it up to my ignorance and inexperience (I'm not a professional dev), but this code snippet is what was the last straw.
-```
-let mut augmented_matrix: Vec<Vec<f32>>;
-  for (index,row) in matrix.iter().enumerate() {
-      let mut the_unit = dbg!(unit_matrix[index].clone());
-      let mut tmp = dbg!(row.clone());
-      // Because why would this obvious operation ever work?: let combined = dbg!(tmp.extend(the_unit));
-      let combined = dbg!(tmp.append(&mut the_unit));
-  ```
-So I try to implement my own linear algebra solver, right? Nothing fancy, just a Gauss-Jordan elimination algorithm. You've seen it on Rosetta Code, I'm sure. Above is the part that took the last of my patience. A matrix is nothing extraordinary, so I use nested vectors. That seems obvious, right? I tried creating the augmented matrix in a fancy map operation. No luck. Then I spent an entire evening breaking this thing down into progressively simpler parts and littering the code with dbg! and println! statements everywhere. In the code above, `the_unit` is a row from a unit vector, like [1,0]. `tmp` is a row from our input matrix, maybe [1,2]. They're cloned, so ownership shouldn't be an issue. Dbg! says 'I'm a vector'. What do we get if we append or extend one vector to another? `()`. Not a compiler error. Not a warning. The operation, which should only ever return a vector, returns nothing, and I don't find out until I get type-mismatch errors further in the code.
-
-I desperately miss languages that usually behave in obvious ways. I've never even been that bothered by having to use a debugger to play detective in Python. If I'm not *really* making good on the whole Rust safety guarantee anyway (because everything that matters is `unsafe` or an FFI to a C/C++ library), and I'm a couple months into this language and not close to having a single useful product, and every few lines of code is a new litany of compiler errors until I have internalized vast knowledge about how the compiler is manipulating memory, then I think it's time to walk away from this sunk cost.
-
-Throughout my learning process, all the unnecessary complexity has been really getting my panties in a wad. I'm not going to get too deep into why all this TIMTOWTDI nonsense very cleverly shown [here](http://antoyo.ml/evolution-rust-programmer) is such a problem. If you need to read equally valid by wildly different code styles up to having to learn some procedural macro DSL just to understand your dependencies, then you probably won't ever bother to understand or help maintain those packages. Oh, and you will have an **absurd** number of dependencies if you do anything complex or network-based because the core developers decided a weak standard library can be shored up by a package manager that makes publication low-effort. If you think that this is a repetition of javascript and npm's mistakes, then you would be right. I feel like I've been hoodwinked by a cartoon crab who sold me the idea of using an incoherent mashup of C++, haskell and npm with the complexity of manual memory management replaced by compiler-assisted memory management which requires complicated manual annotations. Is this really a step forward?
-
-I'm done griping. I'll try again with something more fun to write in. Right now that looks like Go. Julia also seems like a good choice.
-
-I did like the crab mascot.
----
+ __This is on hiatus__
 
 # Civil
 
