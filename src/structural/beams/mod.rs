@@ -21,16 +21,16 @@
 //! - D = deflection
 //!
 
-const PI:f32 = std::f32::consts::PI;
+const PI:f64 = std::f64::consts::PI;
 
 /// This trait gives us a common interface to the formulas used for
 /// determining the properties of beams which vary with a particular beam
 /// cross section.
 pub trait Beam {
-    fn area(&self) -> f32;
-    fn moment_of_inertia(&self) -> f32;
-    fn section_modulus(&self) -> f32;
-    fn radius_of_gyration(&self) -> f32  {
+    fn area(&self) -> f64;
+    fn moment_of_inertia(&self) -> f64;
+    fn section_modulus(&self) -> f64;
+    fn radius_of_gyration(&self) -> f64  {
         (self.moment_of_inertia() / self.area()).powf(0.5)
     }
     // More to come . . .
@@ -45,18 +45,18 @@ pub trait Beam {
 /// Gere, James M., "Mechanics of Materials," 6th Ed.
 #[derive(Debug)]
 pub struct PolygonalBeam {
-    pub circumscribed_radius: f32, // Circumscribed radius
-    pub inscribed_radius: f32, // Inscribed radius (apothem)
+    pub circumscribed_radius: f64, // Circumscribed radius
+    pub inscribed_radius: f64, // Inscribed radius (apothem)
     pub number_sides: i32, // Number of sides
-    pub side_length: f32, // Side length
+    pub side_length: f64, // Side length
 }
 
 #[allow(dead_code)]
 impl PolygonalBeam {
-    pub fn new(side_length: f32, number_sides: i32) -> PolygonalBeam {
+    pub fn new(side_length: f64, number_sides: i32) -> PolygonalBeam {
         PolygonalBeam {
-            circumscribed_radius: side_length / 2.0 / (PI / number_sides as f32).sin(),
-            inscribed_radius: side_length / 2.0 /(PI / number_sides as f32).tan(),
+            circumscribed_radius: side_length / 2.0 / (PI / number_sides as f64).sin(),
+            inscribed_radius: side_length / 2.0 /(PI / number_sides as f64).tan(),
             number_sides: number_sides,
             side_length: side_length,
         }
@@ -64,13 +64,13 @@ impl PolygonalBeam {
 }
 
 impl Beam for PolygonalBeam {
-    fn area(&self) -> f32 {
-        self.number_sides as f32 * self.side_length * self.inscribed_radius / 2.0
+    fn area(&self) -> f64 {
+        self.number_sides as f64 * self.side_length * self.inscribed_radius / 2.0
     }
-    fn moment_of_inertia(&self) -> f32 {
+    fn moment_of_inertia(&self) -> f64 {
         self.area() / 24.0 * (6.0 * self.circumscribed_radius.powi(2) - self.side_length.powi(2))
     }
-    fn section_modulus(&self) -> f32 {
+    fn section_modulus(&self) -> f64 {
         self.moment_of_inertia() / self.inscribed_radius
     }
 }
@@ -81,15 +81,15 @@ impl Beam for PolygonalBeam {
 /// Gere, James M., "Mechanics of Materials," 6th Ed.
 #[derive(Debug)]
 struct TrapezoidalBeam {
-    pub minor: f32,
-    pub major: f32,
-    pub height: f32,
-    diff_lengths : f32,
+    pub minor: f64,
+    pub major: f64,
+    pub height: f64,
+    diff_lengths : f64,
 }
 
 #[allow(dead_code)]
 impl TrapezoidalBeam {
-    pub fn new(minor:f32,major:f32,height:f32) -> TrapezoidalBeam {
+    pub fn new(minor:f64,major:f64,height:f64) -> TrapezoidalBeam {
         TrapezoidalBeam {
             minor: minor,
             major: major,
@@ -100,14 +100,14 @@ impl TrapezoidalBeam {
 }
 
 impl Beam for TrapezoidalBeam {
-    fn area(&self) -> f32 {
+    fn area(&self) -> f64 {
         (self.minor + self.major) / 2.0 * self.height
     }
-    fn moment_of_inertia(&self) -> f32 {
+    fn moment_of_inertia(&self) -> f64 {
         (6.0 * self.minor.powi(2) + 6.0 * self.minor * self.diff_lengths + self.diff_lengths.powi(2))
         / (36.0 * (2.0 * self.minor + self.diff_lengths)) * self.height.powi(3)
     }
-    fn section_modulus(&self) -> f32 {
+    fn section_modulus(&self) -> f64 {
         (6.0 * self.minor.powi(2) + 6.0 * self.minor * self.diff_lengths + self.diff_lengths.powi(2))
         / (12.0 * (3.0 * self.minor + 2.0 * self.diff_lengths)) * self.height.powi(2)
     }
@@ -118,16 +118,16 @@ impl Beam for TrapezoidalBeam {
 /// Gere, James M., "Mechanics of Materials," 6th Ed.
 #[derive(Debug)]
 struct IBeam {
-    pub width: f32,
-    pub height: f32,
-    pub flange: f32, // thickness
-    pub web: f32, // thickness
-    pub web_height: f32,
+    pub width: f64,
+    pub height: f64,
+    pub flange: f64, // thickness
+    pub web: f64, // thickness
+    pub web_height: f64,
 }
 
 #[allow(dead_code)]
 impl IBeam {
-    pub fn new(width:f32, height:f32, flange:f32, web:f32) -> IBeam {
+    pub fn new(width:f64, height:f64, flange:f64, web:f64) -> IBeam {
         IBeam {
             width: width,
             height: height,
@@ -139,14 +139,14 @@ impl IBeam {
 }
 
 impl Beam for IBeam {
-    fn area(&self) -> f32 {
+    fn area(&self) -> f64 {
         2.0 * self.width * self.flange + self.web * self.web_height
     }
-    fn moment_of_inertia(&self) -> f32 {
+    fn moment_of_inertia(&self) -> f64 {
         (self.width * self.height.powi(3) - self.width * self.web_height.powi(3)
     + self.web * self.web_height.powi(3)) / 12.0
     }
-    fn section_modulus(&self) -> f32 {
+    fn section_modulus(&self) -> f64 {
         (self.width * self.height.powi(2) - self.web_height.powi(3) / self.height
     * (self.width - self.web)) / 6.0
     }
@@ -156,13 +156,13 @@ impl Beam for IBeam {
 /// Gere, James M., "Mechanics of Materials," 6th Ed.
 #[derive(Debug)]
 struct CircularBeam {
-    pub rad: f32,
-    pub dia: f32,
+    pub rad: f64,
+    pub dia: f64,
 }
 
 #[allow(dead_code)]
 impl CircularBeam {
-    pub fn new(rad:f32) -> CircularBeam {
+    pub fn new(rad:f64) -> CircularBeam {
         CircularBeam {
             rad: rad,
             dia: 2.0 * rad
@@ -171,13 +171,13 @@ impl CircularBeam {
 }
 
 impl Beam for CircularBeam {
-    fn area(&self) -> f32 {
+    fn area(&self) -> f64 {
         PI*self.rad.powi(2)
     }
-    fn moment_of_inertia(&self) -> f32 {
+    fn moment_of_inertia(&self) -> f64 {
         self.area() / 4.0 * self.rad.powi(2)
     }
-    fn section_modulus(&self) -> f32 {
+    fn section_modulus(&self) -> f64 {
         self.moment_of_inertia() / self.rad
     }
 }
@@ -186,13 +186,13 @@ impl Beam for CircularBeam {
 /// Gere, James M., "Mechanics of Materials," 6th Ed.
 #[derive(Debug)]
 struct CircularTube {
-    pub inner_radius: f32,
-    pub outer_radius: f32,
+    pub inner_radius: f64,
+    pub outer_radius: f64,
 }
 
 #[allow(dead_code)]
 impl CircularTube {
-    pub fn new(inner_radius:f32,outer_radius:f32) -> CircularTube{
+    pub fn new(inner_radius:f64,outer_radius:f64) -> CircularTube{
         CircularTube {
             inner_radius: inner_radius,
             outer_radius: outer_radius,
@@ -201,13 +201,13 @@ impl CircularTube {
 }
 
 impl Beam for CircularTube {
-    fn area(&self) -> f32 {
+    fn area(&self) -> f64 {
         PI * (self.outer_radius.powi(2) - self.inner_radius.powi(2))
     }
-    fn moment_of_inertia(&self) -> f32 {
+    fn moment_of_inertia(&self) -> f64 {
         PI / 4.0 * (self.outer_radius.powi(4) - self.inner_radius.powi(4))
     }
-    fn section_modulus(&self) -> f32 {
+    fn section_modulus(&self) -> f64 {
         PI / 4.0 * (self.outer_radius.powi(4) - self.inner_radius.powi(4)) / self.outer_radius
     }
 }
@@ -224,9 +224,9 @@ impl Beam for CircularTube {
 /// 3. magnitude: a function which accepts a relative position as an argument
 /// and returns some value in units of force. ie f(x) = x * 2
 pub struct Load {
-    pub origin: f32,
-    pub end: f32,
-    pub magnitude: Box<Fn(f32) -> f32>,
+    pub origin: f64,
+    pub end: f64,
+    pub magnitude: Box<Fn(f64) -> f64>,
 }
 
 #[allow(dead_code)]
@@ -234,7 +234,7 @@ impl Load {
     /// Takes a start point, end point (relative to the beam) and a function
     /// the function can be any function which takes a location on the beam
     /// ie the x variable, and returns a number (the magnitude of the load)
-    pub fn new(origin:f32,end:f32,magnitude:fn(x:f32)->f32) -> Load {
+    pub fn new(origin:f64,end:f64,magnitude:fn(x:f64)->f64) -> Load {
         Load {
             origin: origin,
             end: end,
@@ -249,7 +249,7 @@ impl Load {
     /// Arguments:
     /// - location: relative position on the beam where weight is concentrated
     /// - magnitude: weight or force applied.
-    pub fn point(location:f32,magnitude:f32) -> Load {
+    pub fn point(location:f64,magnitude:f64) -> Load {
         Load {
             origin: location,
             end: location,
@@ -264,7 +264,7 @@ impl Load {
     /// - origin: starting point relative to the beam in units of length
     /// - end: end point of the load
     /// - magnitude: the unit force per unit length (ie 1 pound per foot)
-    pub fn distributed(origin:f32,end:f32,magnitude:f32) -> Load {
+    pub fn distributed(origin:f64,end:f64,magnitude:f64) -> Load {
         Load {
             origin: origin,
             end: end,
@@ -289,5 +289,5 @@ pub enum SupportType {
 #[allow(dead_code)]
 pub struct Support {
     pub support_type: SupportType,
-    pub location: f32,
+    pub location: f64,
 }

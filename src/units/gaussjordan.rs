@@ -1,5 +1,5 @@
 
-fn gauss_jordan_elimination(matrix:Vec<Vec<f32>>) -> Vec<Vec<f32>> {
+fn gauss_jordan_elimination(matrix:Vec<Vec<f64>>) -> Vec<Vec<f64>> {
     // is the matrix square?
     let width = matrix.len();
     for row in 0..width {
@@ -8,11 +8,11 @@ fn gauss_jordan_elimination(matrix:Vec<Vec<f32>>) -> Vec<Vec<f32>> {
         }
     }
     // create the corresponding unit matrix
-    let mut unit_matrix: Vec<Vec<f32>> = matrix.iter().map(|_| vec![0f32;width]).collect();
+    let mut unit_matrix: Vec<Vec<f64>> = matrix.iter().map(|_| vec![0f64;width]).collect();
     for i in 0..unit_matrix.len() {
-        unit_matrix[i][i] = 1f32;
+        unit_matrix[i][i] = 1f64;
     }
-    let mut augmented_matrix: Vec<Vec<f32>>;
+    let mut augmented_matrix: Vec<Vec<f64>>;
     for (index,row) in matrix.iter().enumerate() {
         let mut the_unit = dbg!(unit_matrix[index].clone());
         let mut tmp = dbg!(row.clone());
@@ -35,14 +35,14 @@ mod tests {
     #[test]
     fn can_find_inverse() {
         let mut input = vec![
-        vec![2.0f32,-1.0,0.0],
-        vec![-1.0f32,2.0,-1.0],
-        vec![0.0f32,-1.0,2.0]
+        vec![2.0f64,-1.0,0.0],
+        vec![-1.0f64,2.0,-1.0],
+        vec![0.0f64,-1.0,2.0]
         ];
         let mut inverse = vec![
-        vec![0.75f32,0.5,0.25],
-        vec![0.5f32,1.0,0.5],
-        vec![0.25f32,0.5,0.75]
+        vec![0.75f64,0.5,0.25],
+        vec![0.5f64,1.0,0.5],
+        vec![0.25f64,0.5,0.75]
         ];
         println!("input: {:?}",&input);
         println!("inverse: {:?}",&inverse);
@@ -52,7 +52,7 @@ mod tests {
 use crate::gauss_jordan_elimination;
     #[test]
     fn get_unit() {
-        let some_matrix:Vec<Vec<f32>> = vec![vec![1.0f32,2.0],vec![4.0f32,5.0]];
+        let some_matrix:Vec<Vec<f64>> = vec![vec![1.0f64,2.0],vec![4.0f64,5.0]];
         gauss_jordan_elimination(some_matrix);
         assert!(2==2)
     }

@@ -3,7 +3,7 @@ extern crate civil;
 use civil::structural;
 use civil::structural::beams::Beam;
 
-const PRECISION: f32 = 0.01;
+const PRECISION: f64 = 0.01;
 
 #[test]
 fn we_can_test() {

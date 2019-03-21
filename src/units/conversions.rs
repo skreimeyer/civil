@@ -8,7 +8,7 @@
 //! the same format:
 //!
 //!
-//! `((&str,&str),f32)`
+//! `((&str,&str),f64)`
 //! `(("from units","to units"),1.0)`
 //! `(("meter","foot"),3.2)`
 //!
@@ -31,7 +31,7 @@ pub struct Table {
     /// string slices as a key and returns a conversion factor. This should
     /// *feel* the same as having a generic function that knows how to convert
     /// between units.
-    pub convert: HashMap<(&'static str, &'static str), f32>,
+    pub convert: HashMap<(&'static str, &'static str), f64>,
 }
 
 impl Table {
