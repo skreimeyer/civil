@@ -467,8 +467,8 @@ pub const WEIGHTS: [f64; 224] = [
 
 /// define where in our constants is the index of the first abscissa or weight
 /// we want based on our order number
-fn find_index(&m: &i32) -> usize {
-    ((&m + 1) * &m / 2 - 1) as usize
+fn find_index(m: i32) -> usize {
+    ((m + 1) * m / 2 - 1) as usize
 }
 
 /// Gauss-Legendre quadrature
@@ -486,7 +486,7 @@ pub fn integrate(f: fn(f64) -> f64, n: i32, a: f64, b: f64) -> f64 {
         2...64 => {
             let mut result = 0.0;
             let legendre_number = (&n + 1) / 2 + 1;
-            let start_index = find_index(&legendre_number);
+            let start_index = find_index(legendre_number);
             for k in 0..legendre_number {
                 let const_index = (start_index as i32 + k) as usize;
                 let transformed_function = f((b - a) / 2.0 * ABSCISSA[const_index] + (b + a / 2.0));

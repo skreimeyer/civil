@@ -55,17 +55,17 @@ pub struct PolygonalBeam {
 impl PolygonalBeam {
     pub fn new(side_length: f64, number_sides: i32) -> PolygonalBeam {
         PolygonalBeam {
-            circumscribed_radius: side_length / 2.0 / (PI / number_sides as f64).sin(),
-            inscribed_radius: side_length / 2.0 / (PI / number_sides as f64).tan(),
-            number_sides: number_sides,
-            side_length: side_length,
+            circumscribed_radius: side_length / 2.0 / (PI / f64::from(number_sides)).sin(),
+            inscribed_radius: side_length / 2.0 / (PI / f64::from(number_sides)).tan(),
+            number_sides,
+            side_length,
         }
     }
 }
 
 impl Beam for PolygonalBeam {
     fn area(&self) -> f64 {
-        self.number_sides as f64 * self.side_length * self.inscribed_radius / 2.0
+        f64::from(self.number_sides) * self.side_length * self.inscribed_radius / 2.0
     }
     fn moment_of_inertia(&self) -> f64 {
         self.area() / 24.0 * (6.0 * self.circumscribed_radius.powi(2) - self.side_length.powi(2))
@@ -91,9 +91,9 @@ struct TrapezoidalBeam {
 impl TrapezoidalBeam {
     pub fn new(minor: f64, major: f64, height: f64) -> TrapezoidalBeam {
         TrapezoidalBeam {
-            minor: minor,
-            major: major,
-            height: height,
+            minor,
+            major,
+            height,
             diff_lengths: major - minor,
         }
     }
@@ -135,10 +135,10 @@ struct IBeam {
 impl IBeam {
     pub fn new(width: f64, height: f64, flange: f64, web: f64) -> IBeam {
         IBeam {
-            width: width,
-            height: height,
-            flange: flange,
-            web: web,
+            width,
+            height,
+            flange,
+            web,
             web_height: height - 2.0 * flange,
         }
     }
@@ -172,7 +172,7 @@ struct CircularBeam {
 impl CircularBeam {
     pub fn new(rad: f64) -> CircularBeam {
         CircularBeam {
-            rad: rad,
+            rad,
             dia: 2.0 * rad,
         }
     }
@@ -202,8 +202,8 @@ struct CircularTube {
 impl CircularTube {
     pub fn new(inner_radius: f64, outer_radius: f64) -> CircularTube {
         CircularTube {
-            inner_radius: inner_radius,
-            outer_radius: outer_radius,
+            inner_radius,
+            outer_radius,
         }
     }
 }
@@ -244,8 +244,8 @@ impl Load {
     /// ie the x variable, and returns a number (the magnitude of the load)
     pub fn new(origin: f64, end: f64, magnitude: fn(x: f64) -> f64) -> Load {
         Load {
-            origin: origin,
-            end: end,
+            origin,
+            end,
             magnitude: Box::new(magnitude),
         }
     }
@@ -274,8 +274,8 @@ impl Load {
     /// - magnitude: the unit force per unit length (ie 1 pound per foot)
     pub fn distributed(origin: f64, end: f64, magnitude: f64) -> Load {
         Load {
-            origin: origin,
-            end: end,
+            origin,
+            end,
             magnitude: Box::new(move |_x| magnitude),
         }
     }
