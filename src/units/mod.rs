@@ -1,4 +1,4 @@
 //! # units
 
-pub mod conversions;
 pub mod calculus;
+pub mod conversions;

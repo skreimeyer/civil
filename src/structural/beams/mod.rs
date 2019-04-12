@@ -21,7 +21,7 @@
 //! - D = deflection
 //!
 
-const PI:f64 = std::f64::consts::PI;
+const PI: f64 = std::f64::consts::PI;
 
 /// This trait gives us a common interface to the formulas used for
 /// determining the properties of beams which vary with a particular beam
@@ -30,7 +30,7 @@ pub trait Beam {
     fn area(&self) -> f64;
     fn moment_of_inertia(&self) -> f64;
     fn section_modulus(&self) -> f64;
-    fn radius_of_gyration(&self) -> f64  {
+    fn radius_of_gyration(&self) -> f64 {
         (self.moment_of_inertia() / self.area()).powf(0.5)
     }
     // More to come . . .
@@ -46,9 +46,9 @@ pub trait Beam {
 #[derive(Debug)]
 pub struct PolygonalBeam {
     pub circumscribed_radius: f64, // Circumscribed radius
-    pub inscribed_radius: f64, // Inscribed radius (apothem)
-    pub number_sides: i32, // Number of sides
-    pub side_length: f64, // Side length
+    pub inscribed_radius: f64,     // Inscribed radius (apothem)
+    pub number_sides: i32,         // Number of sides
+    pub side_length: f64,          // Side length
 }
 
 #[allow(dead_code)]
@@ -56,7 +56,7 @@ impl PolygonalBeam {
     pub fn new(side_length: f64, number_sides: i32) -> PolygonalBeam {
         PolygonalBeam {
             circumscribed_radius: side_length / 2.0 / (PI / number_sides as f64).sin(),
-            inscribed_radius: side_length / 2.0 /(PI / number_sides as f64).tan(),
+            inscribed_radius: side_length / 2.0 / (PI / number_sides as f64).tan(),
             number_sides: number_sides,
             side_length: side_length,
         }
@@ -84,12 +84,12 @@ struct TrapezoidalBeam {
     pub minor: f64,
     pub major: f64,
     pub height: f64,
-    diff_lengths : f64,
+    diff_lengths: f64,
 }
 
 #[allow(dead_code)]
 impl TrapezoidalBeam {
-    pub fn new(minor:f64,major:f64,height:f64) -> TrapezoidalBeam {
+    pub fn new(minor: f64, major: f64, height: f64) -> TrapezoidalBeam {
         TrapezoidalBeam {
             minor: minor,
             major: major,
@@ -104,12 +104,18 @@ impl Beam for TrapezoidalBeam {
         (self.minor + self.major) / 2.0 * self.height
     }
     fn moment_of_inertia(&self) -> f64 {
-        (6.0 * self.minor.powi(2) + 6.0 * self.minor * self.diff_lengths + self.diff_lengths.powi(2))
-        / (36.0 * (2.0 * self.minor + self.diff_lengths)) * self.height.powi(3)
+        (6.0 * self.minor.powi(2)
+            + 6.0 * self.minor * self.diff_lengths
+            + self.diff_lengths.powi(2))
+            / (36.0 * (2.0 * self.minor + self.diff_lengths))
+            * self.height.powi(3)
     }
     fn section_modulus(&self) -> f64 {
-        (6.0 * self.minor.powi(2) + 6.0 * self.minor * self.diff_lengths + self.diff_lengths.powi(2))
-        / (12.0 * (3.0 * self.minor + 2.0 * self.diff_lengths)) * self.height.powi(2)
+        (6.0 * self.minor.powi(2)
+            + 6.0 * self.minor * self.diff_lengths
+            + self.diff_lengths.powi(2))
+            / (12.0 * (3.0 * self.minor + 2.0 * self.diff_lengths))
+            * self.height.powi(2)
     }
 }
 
@@ -121,13 +127,13 @@ struct IBeam {
     pub width: f64,
     pub height: f64,
     pub flange: f64, // thickness
-    pub web: f64, // thickness
+    pub web: f64,    // thickness
     pub web_height: f64,
 }
 
 #[allow(dead_code)]
 impl IBeam {
-    pub fn new(width:f64, height:f64, flange:f64, web:f64) -> IBeam {
+    pub fn new(width: f64, height: f64, flange: f64, web: f64) -> IBeam {
         IBeam {
             width: width,
             height: height,
@@ -144,11 +150,13 @@ impl Beam for IBeam {
     }
     fn moment_of_inertia(&self) -> f64 {
         (self.width * self.height.powi(3) - self.width * self.web_height.powi(3)
-    + self.web * self.web_height.powi(3)) / 12.0
+            + self.web * self.web_height.powi(3))
+            / 12.0
     }
     fn section_modulus(&self) -> f64 {
-        (self.width * self.height.powi(2) - self.web_height.powi(3) / self.height
-    * (self.width - self.web)) / 6.0
+        (self.width * self.height.powi(2)
+            - self.web_height.powi(3) / self.height * (self.width - self.web))
+            / 6.0
     }
 }
 
@@ -162,17 +170,17 @@ struct CircularBeam {
 
 #[allow(dead_code)]
 impl CircularBeam {
-    pub fn new(rad:f64) -> CircularBeam {
+    pub fn new(rad: f64) -> CircularBeam {
         CircularBeam {
             rad: rad,
-            dia: 2.0 * rad
+            dia: 2.0 * rad,
         }
     }
 }
 
 impl Beam for CircularBeam {
     fn area(&self) -> f64 {
-        PI*self.rad.powi(2)
+        PI * self.rad.powi(2)
     }
     fn moment_of_inertia(&self) -> f64 {
         self.area() / 4.0 * self.rad.powi(2)
@@ -192,7 +200,7 @@ struct CircularTube {
 
 #[allow(dead_code)]
 impl CircularTube {
-    pub fn new(inner_radius:f64,outer_radius:f64) -> CircularTube{
+    pub fn new(inner_radius: f64, outer_radius: f64) -> CircularTube {
         CircularTube {
             inner_radius: inner_radius,
             outer_radius: outer_radius,
@@ -234,7 +242,7 @@ impl Load {
     /// Takes a start point, end point (relative to the beam) and a function
     /// the function can be any function which takes a location on the beam
     /// ie the x variable, and returns a number (the magnitude of the load)
-    pub fn new(origin:f64,end:f64,magnitude:fn(x:f64)->f64) -> Load {
+    pub fn new(origin: f64, end: f64, magnitude: fn(x: f64) -> f64) -> Load {
         Load {
             origin: origin,
             end: end,
@@ -249,7 +257,7 @@ impl Load {
     /// Arguments:
     /// - location: relative position on the beam where weight is concentrated
     /// - magnitude: weight or force applied.
-    pub fn point(location:f64,magnitude:f64) -> Load {
+    pub fn point(location: f64, magnitude: f64) -> Load {
         Load {
             origin: location,
             end: location,
@@ -264,7 +272,7 @@ impl Load {
     /// - origin: starting point relative to the beam in units of length
     /// - end: end point of the load
     /// - magnitude: the unit force per unit length (ie 1 pound per foot)
-    pub fn distributed(origin:f64,end:f64,magnitude:f64) -> Load {
+    pub fn distributed(origin: f64, end: f64, magnitude: f64) -> Load {
         Load {
             origin: origin,
             end: end,
@@ -282,9 +290,9 @@ impl Load {
 /// moment)
 #[allow(dead_code)]
 pub enum SupportType {
-        Fixed,
-        Simple,
-    }
+    Fixed,
+    Simple,
+}
 
 #[allow(dead_code)]
 pub struct Support {
