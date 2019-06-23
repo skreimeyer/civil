@@ -51,7 +51,7 @@ pub struct PolygonalBeam {
     pub side_length: f64,          // Side length
 }
 
-#[allow(dead_code)]
+
 impl PolygonalBeam {
     pub fn new(side_length: f64, number_sides: i32) -> PolygonalBeam {
         PolygonalBeam {
@@ -80,14 +80,14 @@ impl Beam for PolygonalBeam {
 /// exploring the behavior of novel building materials.
 /// Gere, James M., "Mechanics of Materials," 6th Ed.
 #[derive(Debug)]
-struct TrapezoidalBeam {
+pub struct TrapezoidalBeam {
     pub minor: f64,
     pub major: f64,
     pub height: f64,
     diff_lengths: f64,
 }
 
-#[allow(dead_code)]
+
 impl TrapezoidalBeam {
     pub fn new(minor: f64, major: f64, height: f64) -> TrapezoidalBeam {
         TrapezoidalBeam {
@@ -123,7 +123,7 @@ impl Beam for TrapezoidalBeam {
 /// "s-beams" and wide-flange beams "w-beams"
 /// Gere, James M., "Mechanics of Materials," 6th Ed.
 #[derive(Debug)]
-struct IBeam {
+pub struct IBeam {
     pub width: f64,
     pub height: f64,
     pub flange: f64, // thickness
@@ -131,7 +131,7 @@ struct IBeam {
     pub web_height: f64,
 }
 
-#[allow(dead_code)]
+
 impl IBeam {
     pub fn new(width: f64, height: f64, flange: f64, web: f64) -> IBeam {
         IBeam {
@@ -163,12 +163,12 @@ impl Beam for IBeam {
 /// A beam with a round, solid cross section
 /// Gere, James M., "Mechanics of Materials," 6th Ed.
 #[derive(Debug)]
-struct CircularBeam {
+pub struct CircularBeam {
     pub rad: f64,
     pub dia: f64,
 }
 
-#[allow(dead_code)]
+
 impl CircularBeam {
     pub fn new(rad: f64) -> CircularBeam {
         CircularBeam {
@@ -193,12 +193,12 @@ impl Beam for CircularBeam {
 /// A beam with a circular cross section with a hollow center.
 /// Gere, James M., "Mechanics of Materials," 6th Ed.
 #[derive(Debug)]
-struct CircularTube {
+pub struct CircularTube {
     pub inner_radius: f64,
     pub outer_radius: f64,
 }
 
-#[allow(dead_code)]
+
 impl CircularTube {
     pub fn new(inner_radius: f64, outer_radius: f64) -> CircularTube {
         CircularTube {
@@ -237,7 +237,7 @@ pub struct Load {
     pub magnitude: Box<Fn(f64) -> f64>,
 }
 
-#[allow(dead_code)]
+
 impl Load {
     /// Takes a start point, end point (relative to the beam) and a function
     /// the function can be any function which takes a location on the beam
@@ -288,13 +288,13 @@ impl Load {
 /// can provide a reaction shear and a reaction moment) or the beam is
 /// `Simple` (a support which can provide a reaction shear but not a reaction
 /// moment)
-#[allow(dead_code)]
+
 pub enum SupportType {
     Fixed,
     Simple,
 }
 
-#[allow(dead_code)]
+
 pub struct Support {
     pub support_type: SupportType,
     pub location: f64,
