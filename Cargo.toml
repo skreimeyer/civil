@@ -3,8 +3,8 @@ name = "civil"
 description="a library to support civil engineering applications (WIP)"
 keywords=["civil-engineering", "engineering-library", "civil"]
 categories=["science"]
-version = "0.1.6"
-authors = ["Sam Kreimeyer"]
+version = "0.1.7"
+authors = ["Samuel Kreimeyer"]
 edition = "2018"
 license = "MIT"
 homepage = "https://github.com/skreimeyer/civil"
@@ -13,10 +13,12 @@ readme = "README.md"
 
 [badges]
 travis-ci = { repository = "https://travis-ci.org/skreimeyer/civil", branch = "master" }
-codecov = { repository = "https://codecov.io/gh/skreimeyer/civil", branch = "master" }
 
 [dependencies]
 
 [lib]
 name = "civil"
-crate-type = ["rlib"]
+path = "src/lib.rs"
+test = true
+edition = '2018'
+crate-type = ["lib"]
