@@ -49,7 +49,7 @@ mod tests {
         println!("here is the appended output {:?}",(input.append(&mut inverse)));
         assert_eq!(2 + 2, 4);
     }
-use crate::gauss_jordan_elimination;
+use crate::calc::gaussjordan::gauss_jordan_elimination;
     #[test]
     fn get_unit() {
         let some_matrix:Vec<Vec<f64>> = vec![vec![1.0f64,2.0],vec![4.0f64,5.0]];

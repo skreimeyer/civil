@@ -2,8 +2,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ![](https://img.shields.io/crates/d/civil.svg?style=flat)
 
-~~__This is a work in progress__~~
- __This is on hiatus__
+__This is a work in progress__
 
 # Civil
 

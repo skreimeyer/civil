@@ -1,0 +1,2 @@
+- [ ] Opt out of Gauss-Legendre quadrature and implement tanh-sinh quadrature
+- [ ] Opt out of guass-jordan elimination for LU decomposition
