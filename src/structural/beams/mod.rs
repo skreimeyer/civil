@@ -2,16 +2,17 @@
 //! If this gets unweildy, we might have to break out parts of this module into sections.
 //!
 //! ## Conventions: ##
-//! The source uses the following standard conventions for refering to variables:
+//! The source uses the following conventions for refering to variables:
 //!
 //! - A = Area
 //! - I = Moment of inertia (m^4)
 //! - S = Section Modulus (m^4)
 //! - E = Modulus of elasticity (kPa)
+//! - k = Radius of Gyration (m)
 //! - c = Distance to extreme fiber (m)
 //! - W = Load (kN)
 //! - L = Length (m)
-//! - R = reaction (kN)
+//! - Rx = reaction (kN)
 //! - V = Shear (kN)
 //! - M = Bending moment (N-m)
 //! - a = spacing
@@ -23,9 +24,8 @@
 
 const PI: f64 = std::f64::consts::PI;
 
-/// This trait gives us a common interface to the formulas used for
-/// determining the properties of beams which vary with a particular beam
-/// cross section.
+/// Beam provides a common interface to the formulas used for determining the
+/// properties of beams which vary with a particular beam cross section.
 pub trait Beam {
     fn area(&self) -> f64;
     fn moment_of_inertia(&self) -> f64;
@@ -36,187 +36,260 @@ pub trait Beam {
     // More to come . . .
 }
 
-// So refrigerator-thought . . . what if instead of having a "beam" trait,
-// we instead just have a Beam struct, and impl new_something_beam to handle
-// the differences in the types of beams.
-
-/// A beam with a solid, regular-polygonal cross section. This would include
-/// rectangular beams, and any shape with three or more sides of equal length
+/// PolygonalBeam is a beam with a solid, regular-polygonal cross section.
+/// This would include rectangular beams, and any shape with three or more sides
+/// of equal length.
 /// Gere, James M., "Mechanics of Materials," 6th Ed.
 #[derive(Debug)]
+#[allow(non_snake_case)]
 pub struct PolygonalBeam {
-    pub circumscribed_radius: f64, // Circumscribed radius
-    pub inscribed_radius: f64,     // Inscribed radius (apothem)
-    pub number_sides: i32,         // Number of sides
-    pub side_length: f64,          // Side length
+    pub R: f64,         // Circumscribed radius
+    pub r: f64,         // Inscribed radius (apothem)
+    pub sides: i32,     // Number of sides
+    pub side_len: f64,  // Side length
+    pub A: f64,         // Area
+    pub I: f64,         // Moment of Inertia
+    pub S: f64,         // Section Modulus
+    pub k: f64,         // Radius of gyration
+
 }
 
 
 impl PolygonalBeam {
-    pub fn new(side_length: f64, number_sides: i32) -> PolygonalBeam {
-        PolygonalBeam {
-            circumscribed_radius: side_length / 2.0 / (PI / f64::from(number_sides)).sin(),
-            inscribed_radius: side_length / 2.0 / (PI / f64::from(number_sides)).tan(),
-            number_sides,
-            side_length,
-        }
+    /// new creates a new polygonal beam. Arguments 
+    pub fn new(side_len: f64, sides: i32) -> PolygonalBeam {
+        let mut pg = PolygonalBeam {
+            R: side_len / 2.0 / (PI / f64::from(sides)).sin(),
+            r: side_len / 2.0 / (PI / f64::from(sides)).tan(),
+            sides: sides,
+            side_len: side_len,
+            A: 0.0,
+            I: 0.0,
+            S: 0.0,
+            k: 0.0
+        };
+        pg.A = pg.area();
+        pg.I = pg.moment_of_inertia();
+        pg.S = pg.section_modulus();
+        pg.k = pg.radius_of_gyration();
+        return pg;
     }
 }
 
 impl Beam for PolygonalBeam {
     fn area(&self) -> f64 {
-        f64::from(self.number_sides) * self.side_length * self.inscribed_radius / 2.0
+        f64::from(self.sides) * self.side_len * self.r / 2.0
     }
     fn moment_of_inertia(&self) -> f64 {
-        self.area() / 24.0 * (6.0 * self.circumscribed_radius.powi(2) - self.side_length.powi(2))
+        self.area() / 24.0 * (6.0 * self.R.powi(2) - self.side_len.powi(2))
     }
     fn section_modulus(&self) -> f64 {
-        self.moment_of_inertia() / self.inscribed_radius
+        self.moment_of_inertia() / self.r
     }
 }
 
-/// A solid beam with a trapezoidal cross section. These are not typically
-/// used in common construction practice; however, they could be useful for
-/// exploring the behavior of novel building materials.
+/// TrapezoidalBeam are solid beams with a trapezoidal cross section. These are
+/// not typically used in common construction practice; however, they could be
+/// useful for exploring the behavior of novel building materials.
 /// Gere, James M., "Mechanics of Materials," 6th Ed.
 #[derive(Debug)]
+#[allow(non_snake_case)]
 pub struct TrapezoidalBeam {
-    pub minor: f64,
-    pub major: f64,
-    pub height: f64,
-    diff_lengths: f64,
+    pub B: f64,         // Major width
+    pub b: f64,         // Minor width
+    dlen: f64,          // Difference between B and b
+    pub H: f64,         // Height
+    pub A: f64,         // Area
+    pub I: f64,         // Moment of Inertia
+    pub S: f64,         // Section Modulus
+    pub k: f64,         // Radius of gyration
 }
 
 
 impl TrapezoidalBeam {
     pub fn new(minor: f64, major: f64, height: f64) -> TrapezoidalBeam {
-        TrapezoidalBeam {
-            minor,
-            major,
-            height,
-            diff_lengths: major - minor,
-        }
+        let mut tb = TrapezoidalBeam {
+            B: major,
+            b: minor,
+            dlen: major - minor,
+            H: height,
+            A: 0.0,
+            I: 0.0,
+            S: 0.0,
+            k: 0.0,
+        };
+        tb.A = tb.area();
+        tb.I = tb.moment_of_inertia();
+        tb.S = tb.section_modulus();
+        tb.k = tb.radius_of_gyration();
+        return tb;
     }
 }
 
 impl Beam for TrapezoidalBeam {
     fn area(&self) -> f64 {
-        (self.minor + self.major) / 2.0 * self.height
+        (self.b + self.B) / 2.0 * self.H
     }
     fn moment_of_inertia(&self) -> f64 {
-        (6.0 * self.minor.powi(2)
-            + 6.0 * self.minor * self.diff_lengths
-            + self.diff_lengths.powi(2))
-            / (36.0 * (2.0 * self.minor + self.diff_lengths))
-            * self.height.powi(3)
+        (6.0 * self.b.powi(2)
+            + 6.0 * self.b * self.dlen
+            + self.dlen.powi(2))
+            / (36.0 * (2.0 * self.b + self.dlen))
+            * self.H.powi(3)
     }
     fn section_modulus(&self) -> f64 {
-        (6.0 * self.minor.powi(2)
-            + 6.0 * self.minor * self.diff_lengths
-            + self.diff_lengths.powi(2))
-            / (12.0 * (3.0 * self.minor + 2.0 * self.diff_lengths))
-            * self.height.powi(2)
+        (6.0 * self.b.powi(2)
+            + 6.0 * self.b * self.dlen
+            + self.dlen.powi(2))
+            / (12.0 * (3.0 * self.b + 2.0 * self.dlen))
+            * self.H.powi(2)
     }
 }
 
-/// A beam with an "I" shaped cross section. This includes standard beams
+/// IBeam has an "I" shaped cross section. This includes standard beams
 /// "s-beams" and wide-flange beams "w-beams"
+/// Variable naming conventions:
+/// - B = width (as measured on flange)
+/// - H = height (outter distance between flanges)
+/// - t = flange thickness
+/// - b = web thickness
 /// Gere, James M., "Mechanics of Materials," 6th Ed.
 #[derive(Debug)]
+#[allow(non_snake_case)]
 pub struct IBeam {
-    pub width: f64,
-    pub height: f64,
-    pub flange: f64, // thickness
-    pub web: f64,    // thickness
-    pub web_height: f64,
+    pub B: f64,     // Width
+    pub H: f64,     // Height
+    pub t: f64,     // flange thickness
+    pub b: f64,     // web thickness
+    pub A: f64,     // Area
+    pub I: f64,     // Moment of Inertia
+    pub S: f64,     // Section Modulus
+    pub k: f64,     // Radius of gyration
 }
 
 
 impl IBeam {
-    pub fn new(width: f64, height: f64, flange: f64, web: f64) -> IBeam {
-        IBeam {
-            width,
-            height,
-            flange,
-            web,
-            web_height: height - 2.0 * flange,
-        }
+    #[allow(non_snake_case)]
+    pub fn new(B: f64, H: f64, t: f64, b: f64) -> IBeam {
+        let mut ib = IBeam {
+            B,
+            H,
+            t,
+            b,
+            A: 0.0,
+            I: 0.0,
+            S: 0.0,
+            k: 0.0,
+        };
+        ib.A = ib.area();
+        ib.I = ib.moment_of_inertia();
+        ib.S = ib.section_modulus();
+        ib.k = ib.radius_of_gyration();
+        return ib;
     }
 }
 
 impl Beam for IBeam {
     fn area(&self) -> f64 {
-        2.0 * self.width * self.flange + self.web * self.web_height
+        2.0 * self.B * self.t + self.b * (self.H - 2.0 * self.t)
     }
     fn moment_of_inertia(&self) -> f64 {
-        (self.width * self.height.powi(3) - self.width * self.web_height.powi(3)
-            + self.web * self.web_height.powi(3))
+        (self.B * self.H.powi(3) - self.B * (self.H - 2.0 * self.t).powi(3)
+            + self.b * (self.H - 2.0 * self.t).powi(3))
             / 12.0
     }
     fn section_modulus(&self) -> f64 {
-        (self.width * self.height.powi(2)
-            - self.web_height.powi(3) / self.height * (self.width - self.web))
+        (self.B * self.H.powi(2)
+            - (self.H - 2.0 * self.t).powi(3) / self.H * (self.B - self.b))
             / 6.0
     }
 }
 
-/// A beam with a round, solid cross section
+/// CircularBeam is a beam with a round, solid cross section
 /// Gere, James M., "Mechanics of Materials," 6th Ed.
 #[derive(Debug)]
+#[allow(non_snake_case)]
 pub struct CircularBeam {
-    pub rad: f64,
-    pub dia: f64,
+    pub R: f64,     // Radius
+    pub A: f64,     // Area
+    pub I: f64,     // Moment of Inertia
+    pub S: f64,     // Section Modulus
+    pub k: f64,     // Radius of gyration
 }
 
-
 impl CircularBeam {
-    pub fn new(rad: f64) -> CircularBeam {
-        CircularBeam {
-            rad,
-            dia: 2.0 * rad,
-        }
+    #[allow(non_snake_case)]
+    pub fn new(R: f64) -> CircularBeam {
+        let mut cb = CircularBeam {
+            R,
+            A: 0.0,
+            I: 0.0,
+            S: 0.0,
+            k: 0.0,
+        };
+        cb.A = cb.area();
+        cb.I = cb.moment_of_inertia();
+        cb.S = cb.section_modulus();
+        cb.k = cb.radius_of_gyration();
+        return cb;
     }
 }
 
 impl Beam for CircularBeam {
     fn area(&self) -> f64 {
-        PI * self.rad.powi(2)
+        PI * self.R.powi(2)
     }
     fn moment_of_inertia(&self) -> f64 {
-        self.area() / 4.0 * self.rad.powi(2)
+        self.area() / 4.0 * self.R.powi(2)
     }
     fn section_modulus(&self) -> f64 {
-        self.moment_of_inertia() / self.rad
+        self.moment_of_inertia() / self.R
     }
 }
 
-/// A beam with a circular cross section with a hollow center.
+/// CircularTube is a beam with a circular cross section with a hollow center.
+/// This would model the behavior as pipes used as beams.
 /// Gere, James M., "Mechanics of Materials," 6th Ed.
 #[derive(Debug)]
+#[allow(non_snake_case)]
 pub struct CircularTube {
-    pub inner_radius: f64,
-    pub outer_radius: f64,
+    pub r: f64,     // Inner radius
+    pub R: f64,     // Outer radius
+    pub A: f64,     // Area
+    pub I: f64,     // Moment of Inertia
+    pub S: f64,     // Section Modulus
+    pub k: f64,     // Radius of gyration
 }
 
 
 impl CircularTube {
-    pub fn new(inner_radius: f64, outer_radius: f64) -> CircularTube {
-        CircularTube {
-            inner_radius,
-            outer_radius,
-        }
+    #[allow(non_snake_case)]
+    pub fn new(r: f64, R: f64) -> CircularTube {
+        let mut ct = CircularTube {
+            r,
+            R,
+            A: 0.0,
+            I: 0.0,
+            S: 0.0,
+            k: 0.0,
+        };
+        ct.A = ct.area();
+        ct.I = ct.moment_of_inertia();
+        ct.S = ct.section_modulus();
+        ct.k = ct.radius_of_gyration();
+        return ct;
     }
 }
 
 impl Beam for CircularTube {
     fn area(&self) -> f64 {
-        PI * (self.outer_radius.powi(2) - self.inner_radius.powi(2))
+        PI * (self.R.powi(2) - self.r.powi(2))
     }
     fn moment_of_inertia(&self) -> f64 {
-        PI / 4.0 * (self.outer_radius.powi(4) - self.inner_radius.powi(4))
+        PI / 4.0 * (self.R.powi(4) - self.r.powi(4))
     }
     fn section_modulus(&self) -> f64 {
-        PI / 4.0 * (self.outer_radius.powi(4) - self.inner_radius.powi(4)) / self.outer_radius
+        PI / 4.0 * (self.R.powi(4) - self.r.powi(4)) / self.R
     }
 }
 
