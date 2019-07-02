@@ -21,7 +21,6 @@ const H: f64 = 0.015625;
 
 /// integrate takes an arbitrary univariate function, a start and end point and
 /// then performs an arbitrary precision numerical calculation of an integral.
-/// 
 /// A future implementation might attempt to make a reasonable inference about
 /// precision and save computational time by increasing the size of the stride
 /// through the array of abscissa and weights.
