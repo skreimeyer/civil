@@ -322,7 +322,7 @@ impl Load {
             magnitude: Box::new(magnitude),
         }
     }
-    /// convenience function to allow quick definition of point loads. Point
+    /// Point is a function to allow quick definition of point loads. Point
     /// loads are the same as concentrated loads, or a force acting on a beam
     /// which is located at a single point. If the beam is supporting another
     /// beam joined by a pin, the force caused by the weight of the supported
@@ -337,7 +337,7 @@ impl Load {
             magnitude: Box::new(move |_any_x_value| magnitude),
         }
     }
-    /// Convenience function to allow quick definition of distributed loads.
+    /// Distributed is a function to allow quick definition of distributed loads.
     /// Distributed loads refer to weight which is uniformly distributed
     /// across all or part of the beam. Supported objects with a wide contact
     /// area with the supporting beam could be modeled as a distributed load.
@@ -356,19 +356,18 @@ impl Load {
 
 // ### Define our different types of beam supports ###
 
-/// Beam supports. Where a beam support does not exist, the beam is implicitly
+/// SupportType. Where a beam support does not exist, the beam is implicitly
 /// free (unsupported). Otherwise, the beam support is `Fixed` (a support which
 /// can provide a reaction shear and a reaction moment) or the beam is
 /// `Simple` (a support which can provide a reaction shear but not a reaction
 /// moment)
-
 pub enum SupportType {
     Fixed,
     Simple,
 }
 
-
+/// Support combines the type of support and its location.
 pub struct Support {
-    pub support_type: SupportType,
-    pub location: f64,
+    pub kind: SupportType,
+    pub loc: f64,
 }
