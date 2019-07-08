@@ -1,4 +1,5 @@
 //! #calculus
+//! 
 //! Numerical methods for integration.
 //! 
 //! Simple example:
