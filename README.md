@@ -2,13 +2,13 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ![](https://img.shields.io/crates/d/civil.svg?style=flat)
 
-__This is a work in progress__
+~~__This is a work in progress__~~ Progress will resume after a Python prototype is complete.
 
 # Civil
 
 This package is meant to provide solutions to common civil engineering problems. Everything is very much a work in progress. Ideally, on maturity, this library should support developers interested in making applications that assist with tasks like determining the geometric design of streets, sizing culverts and basic economic analysis for construction projects. The ultimate goal is to have a simple API for common civil engineering design equations so that an application developer can focus more on application-specific implementation rather than on researching methods.
 
-A good example of the intended effect would be if a web developer could write a short function in Rust that uses this API to, say, calculate the flow of water in an open channel given channel dimensions and roughness, then compile that to WASM and call that function from JS with user inputs to produce a graphical representation of the channel in a `<canvas></canvas>` element. Another good use case would be the functions in this library being used to support a module or extension in a CAD suite.
+A good example of the intended effect would be if a web developer could write a short function in Rust that uses this API to, say, calculate the flow of water in an open channel given channel dimensions and roughness, then compile that to WASM and call that function from JS with user inputs to produce a graphical representation of the channel in a `<canvas>` element. Another good use case would be the functions in this library being used to support a module or extension in a CAD suite.
 
 The aim of Civil is to be comprehensive enough to be useful, but simple enough to be flexible. Consequently, complex tasks, like reading in digital elevation models, delineating watersheds and transforming geometric objects to be written to some very vendor-specific file types (I'm looking at you .DWG) is out of scope for this project.
 
@@ -20,11 +20,11 @@ The aim of Civil is to be comprehensive enough to be useful, but simple enough t
 
 > Why make a library at all?
 
-2. Engineers and designers solve important, tangible problems. Modern infrastructure like water and sanitation enable a quality of life that was impossible just a few generations years ago. Lowering the barriers to providing these benefits to more people makes the world a better place. Robust, freely available software lowers the barriers, and currently there are not many tools available unlike tools for problem domains like, games, for example.
+2. Civil Engineers and architects solve important, tangible problems. Modern infrastructure like water and sanitation enable a quality of life that was impossible just a few generations years ago. Lowering the barriers to providing these benefits to more people makes the world a better place. Robust, freely available software lowers the barriers, and currently there are not enough tools available in the FOSS domain.
 
 > Why Rust?
 
-3. Rust has several of the characteristics of C++ with compiler enforced memory safety measures which makes it in that way an improvement over C++. Mostly, though, this library is written in Rust because I 1) don't know Fortran 2) got frustrated with GNAT's build system 3) Writing a library in Go or Python to be used with other languages seems a bit weird.
+3. Rust is an emerging language with some promising technical characteristics and can potentially be leveraged by other languages through WASM or FFI.
 
 ## The Road to 0.1.0
 Checklist:
@@ -55,18 +55,8 @@ Things this project needs:
 - Tests
 - Benchmarks
 - Documentation
+- Basically everything
 
 > What if I don't know anything about civil engineering?
 
 There are some [excellent texts](https://www.amazon.com/Civil-Engineering-Formulas-Tyler-Hicks/dp/0071614699) that thoroughly list most of the functions appropriate for this library. You don't necessarily need to fully understand their context and usage as long as you can translate an equation into rust with sensible inputs and outputs.
-
-The Do's:
-1. The file hierarchy should be clear and have intuitive organization based on logical groupings of tasks.
-2. Clear documentation should be provided with every function or struct.
-3. Clear documentation should include citations.
-4. Write tests.
-7. Formulas should be unit-system agnostic where possible, and should handle differing unit systems (imperial or metric) appropriately. The convention will be to pass 'imperial' or 'metric' as a final argument when distinction is necessary.
-
-The Dont's:
-1. Do not introduce dependencies that are not actually necessary.
-2. Do not create interdependencies between top-level modules. Your geotech functions shouldn't break your hydrology functions.

@@ -6,7 +6,7 @@ use std::error::Error;
 use std::fmt;
 
 #[derive(Debug)]
-struct MatrixError {
+pub struct MatrixError {
     details: String
 }
 
@@ -38,9 +38,9 @@ pub struct Matrix {
 
 
 impl Matrix {
-    fn mul(&self, m: Matrix) -> Result<Matrix, MatrixError> {
+    pub fn mul(&self, m: Matrix) -> Result<Matrix, MatrixError> {
         if m.stride * self.stride != m.data.len() {
-            Err(MatrixError::new("Matrices are of different size!"));
+            return Err(MatrixError::new("Matrices are of incompatible size!"));
         }
         let mut prod = Matrix{stride: m.stride, data: Vec::with_capacity(self.data.len()/self.stride * m.stride)};
         for i in (0..self.data.len()).step_by(self.stride) {
